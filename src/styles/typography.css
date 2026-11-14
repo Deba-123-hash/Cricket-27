@@ -1,0 +1,85 @@
+/* ==========================================================================
+   CRICKET27 TYPOGRAPHY FOUNDATION
+   ========================================================================== */
+
+/* Heading Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  color: var(--color-warm-white);
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw + 0.75rem, 4.5rem);
+  letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: clamp(1.65rem, 3.5vw + 0.4rem, 3.25rem);
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2.2vw + 0.3rem, 2.25rem);
+}
+
+h4 {
+  font-size: clamp(1.15rem, 1.5vw + 0.25rem, 1.75rem);
+}
+
+h5 {
+  font-size: clamp(1.1rem, 1vw + 0.25rem, 1.35rem);
+}
+
+h6 {
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+
+/* Paragraph & Lead Styles */
+p {
+  color: var(--color-warm-white);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.lead {
+  font-size: clamp(1.125rem, 1.25vw + 0.5rem, 1.35rem);
+  line-height: 1.7;
+  color: var(--color-muted);
+  font-weight: 400;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-caption {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+/* Gradient & Brand Text Utilities */
+.text-gradient-lime {
+  background: linear-gradient(135deg, #FFFFFF 0%, #B7F34A 60%, #85C421 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-coral {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FF8A6B 60%, #FF704D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-white {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

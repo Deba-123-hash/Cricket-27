@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="limeDarkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8F76B"/>
+      <stop offset="100%" stop-color="#B7F34A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Crest Symbol with Deep Slate Fill -->
+  <g transform="translate(16, 12)">
+    <polygon points="48,4 88,26 88,74 48,96 8,74 8,26" fill="#182337" stroke="url(#limeDarkBg)" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 28 26 Q 48 50 28 74" stroke="#32445E" stroke-width="2.5" stroke-dasharray="3,3"/>
+    <path d="M 68 26 Q 48 50 68 74" stroke="#32445E" stroke-width="2.5" stroke-dasharray="3,3"/>
+    <text x="48" y="60" font-family="'Oswald', sans-serif" font-weight="700" font-size="34" fill="#B7F34A" text-anchor="middle">27</text>
+    <circle cx="76" cy="22" r="3" fill="#FF704D"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="132" y="68" font-family="'Oswald', sans-serif" font-weight="700" font-size="46" fill="#F5F3EB" letter-spacing="3">CRICKET</text>
+  <text x="330" y="68" font-family="'Oswald', sans-serif" font-weight="700" font-size="46" fill="#B7F34A" letter-spacing="2">27</text>
+
+  <!-- Tagline -->
+  <text x="134" y="94" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#8491A3" letter-spacing="6">BEYOND THE BOUNDARY</text>
+  <line x1="392" y1="90" x2="480" y2="90" stroke="#B7F34A" stroke-width="2" stroke-linecap="round"/>
+</svg>

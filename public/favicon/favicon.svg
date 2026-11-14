@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cricketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF87" />
+      <stop offset="100%" stop-color="#00A854" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#FFB800" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shield / Hex -->
+  <polygon points="64,6 118,36 118,92 64,122 10,92 10,36" fill="#080C14" stroke="url(#cricketGradient)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Cricket Seam Curves -->
+  <path d="M 32 30 Q 64 64 32 98" fill="none" stroke="#212E4A" stroke-width="2.5" stroke-dasharray="3,3" />
+  <path d="M 96 30 Q 64 64 96 98" fill="none" stroke="#212E4A" stroke-width="2.5" stroke-dasharray="3,3" />
+  <!-- 'C27' Monogram -->
+  <text x="64" y="74" font-family="'Rajdhani', 'Impact', sans-serif" font-weight="800" font-size="44" fill="url(#cricketGradient)" text-anchor="middle" letter-spacing="1">C27</text>
+  <!-- Underline Accent -->
+  <line x1="42" y1="84" x2="86" y2="84" stroke="url(#goldGradient)" stroke-width="3" stroke-linecap="round"/>
+</svg>

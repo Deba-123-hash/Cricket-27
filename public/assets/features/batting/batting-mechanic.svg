@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="batBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#162238"/>
+    </linearGradient>
+    <linearGradient id="limeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#B7F34A" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#batBg)"/>
+  <!-- Pitch Grid Gridlines -->
+  <g stroke="#263449" stroke-width="1" opacity="0.6">
+    <line x1="50" y1="50" x2="550" y2="50"/>
+    <line x1="50" y1="150" x2="550" y2="150"/>
+    <line x1="50" y1="250" x2="550" y2="250"/>
+    <line x1="50" y1="350" x2="550" y2="350"/>
+  </g>
+  <!-- 360 Wagon Wheel Arcs -->
+  <circle cx="300" cy="240" r="140" fill="none" stroke="#263449" stroke-width="2" stroke-dasharray="6,6"/>
+  <circle cx="300" cy="240" r="90" fill="none" stroke="#263449" stroke-width="2" stroke-dasharray="4,4"/>
+  <circle cx="300" cy="240" r="40" fill="#101827" stroke="#B7F34A" stroke-width="2"/>
+  <!-- Shot Trajectory Rays -->
+  <path d="M 300 240 L 460 120" stroke="#B7F34A" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="460" cy="120" r="6" fill="#B7F34A"/>
+  <path d="M 300 240 L 140 140" stroke="#FF704D" stroke-width="2" stroke-dasharray="4,4"/>
+  <path d="M 300 240 L 420 320" stroke="#38BDF8" stroke-width="2"/>
+  <!-- Timing Meter HUD -->
+  <g transform="translate(180, 50)">
+    <rect width="240" height="24" rx="4" fill="#101827" stroke="#263449" stroke-width="1.5"/>
+    <rect x="95" y="3" width="50" height="18" rx="2" fill="#B7F34A" opacity="0.9"/>
+    <line x1="120" y1="0" x2="120" y2="24" stroke="#101827" stroke-width="3"/>
+    <text x="120" y="44" fill="#B7F34A" font-family="'Oswald', sans-serif" font-size="12" font-weight="700" letter-spacing="2" text-anchor="middle">PERFECT TIMING &bull; 0.4ms</text>
+  </g>
+  <!-- Bat Stroke Silhouette -->
+  <g transform="translate(275, 190)">
+    <polygon points="12,10 48,-28 54,-24 18,14" fill="#FF704D"/>
+    <circle cx="10" cy="12" r="8" fill="#F5F3EB"/>
+    <circle cx="10" cy="12" r="16" stroke="#B7F34A" stroke-width="1.5" fill="none" opacity="0.8"/>
+  </g>
+  <!-- Technical Legend -->
+  <text x="30" y="375" fill="#8491A3" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="1">BATTING &bull; 360° PRECISION PLACEMENT</text>
+  <text x="570" y="375" fill="#B7F34A" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="end">120 FPS INPUT</text>
+</svg>

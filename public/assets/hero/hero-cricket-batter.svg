@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Background Midnight Stadium Gradient -->
+    <linearGradient id="skyGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#080D18"/>
+      <stop offset="60%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#162034"/>
+    </linearGradient>
+    
+    <!-- Floodlight Beam Cones -->
+    <linearGradient id="floodlightLeft" x1="0%" y1="0%" x2="70%" y2="80%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#B7F34A" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#B7F34A" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="floodlightRight" x1="100%" y1="0%" x2="30%" y2="80%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#F5F3EB" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#B7F34A" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Pitch Glow Radial -->
+    <radialGradient id="pitchGlow" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#101827" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Turf Gradient -->
+    <linearGradient id="turfGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#182337"/>
+      <stop offset="100%" stop-color="#0D131F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky & Night Atmosphere -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+
+  <!-- Stadium Lighting Cones -->
+  <polygon points="120,-40 600,1080 -100,1080" fill="url(#floodlightLeft)"/>
+  <polygon points="1800,-40 2020,1080 1320,1080" fill="url(#floodlightRight)"/>
+
+  <!-- Stadium Floodlight Towers -->
+  <g fill="#263449">
+    <!-- Left Tower -->
+    <rect x="110" y="40" width="30" height="14" rx="2" fill="#B7F34A"/>
+    <polygon points="105,54 145,54 135,220 115,220" opacity="0.6"/>
+    <!-- Right Tower -->
+    <rect x="1780" y="40" width="30" height="14" rx="2" fill="#B7F34A"/>
+    <polygon points="1775,54 1815,54 1805,220 1785,220" opacity="0.6"/>
+  </g>
+
+  <!-- Crowd Tier Silhouettes & Stadium Bowl Curve -->
+  <path d="M 0 540 Q 960 480 1920 540 L 1920 1080 L 0 1080 Z" fill="url(#turfGrad)"/>
+  <ellipse cx="960" cy="850" rx="800" ry="240" fill="url(#pitchGlow)"/>
+
+  <!-- Stadium Boundary Rope Arc -->
+  <path d="M 160 840 Q 960 680 1760 840" stroke="#263449" stroke-width="4" stroke-dasharray="8,8" fill="none"/>
+  
+  <!-- Central Pitch Strip 2D -->
+  <polygon points="860,690 1060,690 1140,980 780,980" fill="#141D2E" stroke="#32445E" stroke-width="2"/>
+  <!-- Popping Creases -->
+  <line x1="840" y1="730" x2="1080" y2="730" stroke="#B7F34A" stroke-width="3"/>
+  <line x1="770" y1="940" x2="1150" y2="940" stroke="#B7F34A" stroke-width="3"/>
+
+  <!-- Batsman Silhouette (Cover Drive Stance) -->
+  <g transform="translate(930, 680)">
+    <!-- Shadow -->
+    <ellipse cx="30" cy="190" rx="50" ry="12" fill="#0A0E17" opacity="0.8"/>
+    <!-- Back Leg -->
+    <path d="M 10 185 L 14 130 L 22 100" stroke="#F5F3EB" stroke-width="14" stroke-linecap="round"/>
+    <!-- Front Leg (Bent Forward in Drive) -->
+    <path d="M 22 100 L 52 135 L 62 188" stroke="#B7F34A" stroke-width="15" stroke-linecap="round"/>
+    <!-- Torso / Jersey -->
+    <path d="M 18 100 L 28 45 L 48 48 L 38 100 Z" fill="#F5F3EB"/>
+    <!-- Head / Helmet -->
+    <circle cx="44" cy="24" r="14" fill="#B7F34A"/>
+    <path d="M 44 26 L 60 26" stroke="#101827" stroke-width="3" stroke-linecap="round"/> <!-- Grille -->
+    <!-- Arms Holding Bat -->
+    <path d="M 32 50 L 58 75 L 85 92" stroke="#F5F3EB" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 44 50 L 64 72 L 85 92" stroke="#F5F3EB" stroke-width="9" stroke-linecap="round"/>
+    <!-- Cricket Bat Blade High Follow-Through -->
+    <polygon points="82,88 128,40 134,44 88,96" fill="#FF704D" stroke="#FFFFFF" stroke-width="1.5"/>
+    <!-- Dynamic Impact Ring -->
+    <circle cx="85" cy="92" r="18" stroke="#B7F34A" stroke-width="2.5" stroke-dasharray="4,4" fill="none"/>
+  </g>
+
+  <!-- High-Energy Ball Trajectory Particle Stream -->
+  <path d="M 1015 772 Q 1350 680 1740 580" stroke="#B7F34A" stroke-width="3" stroke-dasharray="6,4" fill="none"/>
+  <circle cx="1740" cy="580" r="7" fill="#FF704D"/>
+
+  <!-- Watermark Brand Overlay -->
+  <text x="120" y="1000" font-family="'Oswald', sans-serif" font-weight="700" font-size="52" fill="#F5F3EB" letter-spacing="4">
+    CRICKET<tspan fill="#B7F34A">27</tspan>
+  </text>
+  <text x="122" y="1035" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#8491A3" letter-spacing="8">
+    MAIN HERO ARTWORK &bull; 16:9 4K CINEMATIC
+  </text>
+</svg>

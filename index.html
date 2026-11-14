@@ -1,14 +1,41 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/cricket-ball.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>CRICKET27 — Full 3D Cricket Game</title>
-    <meta name="description" content="CRICKET27: YOUR GAME. YOUR TEAM. YOUR LEGACY. Next-generation 3D cricket simulation powered by Three.js and React Three Fiber." />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CRICKET27 — Official 2D Cricket Gaming Brand Website. Beyond The Boundary." />
+    <meta name="theme-color" content="#101827" />
+    <title>CRICKET27 — Beyond The Boundary</title>
+
+    <!-- Preload Critical LCP Hero Image (Desktop & Mobile) -->
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/hero/cricket27-home-hero.webp"
+      type="image/webp"
+      media="(min-width: 769px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/hero/cricket27-home-hero-mobile.webp"
+      type="image/webp"
+      media="(max-width: 768px)"
+      fetchpriority="high"
+    />
+    
+    <!-- Google Fonts Preconnect & Display Swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-slate-950 text-white overflow-hidden select-none">
+  <body class="bg-midnight text-warm-white font-sans antialiased selection:bg-lime selection:text-midnight min-h-screen">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

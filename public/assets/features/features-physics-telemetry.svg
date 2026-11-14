@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="physicsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E17"/>
+      <stop offset="100%" stop-color="#162034"/>
+    </linearGradient>
+    <radialGradient id="ballGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF704D" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF704D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#physicsBg)"/>
+
+  <!-- Left: Stylized 2D Cricket Ball with Seam Revolution -->
+  <g transform="translate(480, 520)">
+    <!-- Ball Glow -->
+    <circle cx="0" cy="0" r="260" fill="url(#ballGlow)"/>
+    <!-- Ball Core -->
+    <circle cx="0" cy="0" r="180" fill="#182337" stroke="#32445E" stroke-width="3"/>
+    <circle cx="0" cy="0" r="172" fill="#101827"/>
+    <!-- Raised Seam Band -->
+    <ellipse cx="0" cy="0" rx="60" ry="176" fill="none" stroke="#FF704D" stroke-width="8" stroke-dasharray="14,10"/>
+    <!-- Stitches -->
+    <ellipse cx="0" cy="0" rx="60" ry="176" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4,8"/>
+    <!-- Revolution Angle Indicator -->
+    <path d="M -140 -80 A 180 180 0 0 1 120 -110" stroke="#B7F34A" stroke-width="4" stroke-dasharray="8,6" fill="none"/>
+    <polygon points="135,-105 110,-125 125,-100" fill="#B7F34A"/>
+    <!-- Center Label -->
+    <text x="0" y="-12" font-family="'Oswald', sans-serif" font-weight="700" font-size="28" fill="#F5F3EB" text-anchor="middle">SEAM ANGLE</text>
+    <text x="0" y="24" font-family="'Oswald', sans-serif" font-weight="700" font-size="34" fill="#B7F34A" text-anchor="middle">22.5&deg; OUTSWING</text>
+  </g>
+
+  <!-- Right: Telemetry Dashboard & DRS Flight Curve -->
+  <g transform="translate(1040, 260)">
+    <rect width="760" height="540" rx="14" fill="#182337" stroke="#263449" stroke-width="2"/>
+    
+    <text x="50" y="60" font-family="'Oswald', sans-serif" font-weight="700" font-size="28" fill="#F5F3EB" letter-spacing="1">
+      BALL DYNAMICS &amp; TRAJECTORY TELEMETRY
+    </text>
+    <text x="50" y="95" font-family="'Inter', sans-serif" font-size="13" fill="#8491A3">
+      PHYSICS REFRESH RATE: 120HZ &bull; SUB-MILLISECOND HITBOX RESOLUTION
+    </text>
+
+    <!-- Speed Metric Box -->
+    <g transform="translate(50, 130)">
+      <rect width="310" height="110" rx="8" fill="#101827" stroke="#263449"/>
+      <text x="24" y="38" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3">RELEASE VELOCITY</text>
+      <text x="24" y="86" font-family="'Oswald', sans-serif" font-weight="700" font-size="44" fill="#B7F34A">148.5 <tspan font-size="20" fill="#8491A3">KM/H</tspan></text>
+    </g>
+
+    <!-- Revolution Metric Box -->
+    <g transform="translate(390, 130)">
+      <rect width="320" height="110" rx="8" fill="#101827" stroke="#263449"/>
+      <text x="24" y="38" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3">REVOLUTION RATE</text>
+      <text x="24" y="86" font-family="'Oswald', sans-serif" font-weight="700" font-size="44" fill="#FF704D">2,420 <tspan font-size="20" fill="#8491A3">RPM</tspan></text>
+    </g>
+
+    <!-- Trajectory Flight Curve Box -->
+    <g transform="translate(50, 270)">
+      <rect width="660" height="220" rx="8" fill="#101827" stroke="#263449"/>
+      <text x="24" y="36" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3">DRS HAWKEYE IMPACT PREDICTION</text>
+      
+      <!-- Stumps Silhouette -->
+      <line x1="560" y1="90" x2="560" y2="180" stroke="#FF704D" stroke-width="4"/>
+      <line x1="575" y1="90" x2="575" y2="180" stroke="#FF704D" stroke-width="4"/>
+      <line x1="590" y1="90" x2="590" y2="180" stroke="#FF704D" stroke-width="4"/>
+      <line x1="555" y1="90" x2="595" y2="90" stroke="#FF704D" stroke-width="3"/>
+
+      <!-- Pitch Line & Bounce Arc -->
+      <line x1="30" y1="180" x2="630" y2="180" stroke="#32445E" stroke-width="2"/>
+      <!-- Pitch Impact Point -->
+      <path d="M 40 80 Q 220 180 340 180 T 575 120" stroke="#B7F34A" stroke-width="3" stroke-dasharray="6,4" fill="none"/>
+      <!-- Impact Point -->
+      <circle cx="340" cy="180" r="6" fill="#B7F34A"/>
+      <text x="340" y="205" font-family="'Inter', sans-serif" font-size="10" fill="#B7F34A" text-anchor="middle">PITCHING IN LINE</text>
+      <!-- Stumps Hit Indicator -->
+      <circle cx="575" cy="120" r="7" fill="#FF704D"/>
+      <text x="575" y="70" font-family="'Oswald', sans-serif" font-weight="700" font-size="14" fill="#FF704D" text-anchor="middle">HITTING WICKETS</text>
+    </g>
+  </g>
+
+  <!-- Watermark Bottom -->
+  <text x="120" y="1000" font-family="'Oswald', sans-serif" font-weight="700" font-size="44" fill="#F5F3EB" letter-spacing="3">
+    PHYSICS &amp; GAMEPLAY TELEMETRY &bull; FEATURE SHOWCASE
+  </text>
+</svg>

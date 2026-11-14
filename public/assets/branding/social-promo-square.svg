@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080D18"/>
+      <stop offset="60%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#182337"/>
+    </linearGradient>
+    <radialGradient id="sqLime" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#B7F34A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#sqBg)"/>
+  <circle cx="540" cy="480" r="440" fill="url(#sqLime)"/>
+
+  <!-- Center Shield Logo -->
+  <g transform="translate(420, 200)">
+    <polygon points="120,15 220,72 220,192 120,250 20,192 20,72" fill="#182337" stroke="#B7F34A" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 68 76 Q 120 132 68 190" stroke="#263449" stroke-width="4.5" stroke-dasharray="5,5"/>
+    <path d="M 172 76 Q 120 132 172 190" stroke="#263449" stroke-width="4.5" stroke-dasharray="5,5"/>
+    <text x="120" y="162" font-family="'Oswald', sans-serif" font-weight="700" font-size="96" fill="#B7F34A" text-anchor="middle">27</text>
+    <circle cx="190" cy="58" r="8" fill="#FF704D"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="540" y="600" font-family="'Oswald', sans-serif" font-weight="700" font-size="78" fill="#F5F3EB" text-anchor="middle" letter-spacing="4">
+    CRICKET<tspan fill="#B7F34A">27</tspan>
+  </text>
+
+  <text x="540" y="670" font-family="'Oswald', sans-serif" font-weight="700" font-size="34" fill="#B7F34A" text-anchor="middle" letter-spacing="8">
+    BEYOND THE BOUNDARY
+  </text>
+
+  <text x="540" y="730" font-family="'Inter', sans-serif" font-size="18" fill="#8491A3" text-anchor="middle" letter-spacing="2">
+    THE NEXT ERA OF 2D CRICKET GAMING
+  </text>
+
+  <!-- Bottom Details Bar -->
+  <line x1="240" y1="840" x2="840" y2="840" stroke="#263449" stroke-width="2"/>
+  
+  <text x="540" y="900" font-family="'Inter', sans-serif" font-weight="600" font-size="14" fill="#F5F3EB" text-anchor="middle" letter-spacing="4">
+    OFFICIAL BRAND PROMOTIONAL ANNOUNCEMENT
+  </text>
+  <text x="540" y="935" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3" text-anchor="middle">
+    Pre-Production Milestone &bull; Community Access Opening Soon
+  </text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="custBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1626"/>
+      <stop offset="100%" stop-color="#162238"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#custBg)"/>
+  <!-- Custom Jersey Silhouette Center -->
+  <g transform="translate(300, 190)">
+    <!-- Jersey Body -->
+    <path d="M -50 -70 L -25 -70 Q 0 -55 25 -70 L 50 -70 L 80 -30 L 55 -15 L 45 -35 L 45 70 L -45 70 L -45 -35 L -55 -15 L -80 -30 Z" fill="#162238" stroke="#B7F34A" stroke-width="2"/>
+    <!-- Collar Detail -->
+    <path d="M -25 -70 Q 0 -45 25 -70" fill="none" stroke="#B7F34A" stroke-width="3"/>
+    <!-- Brand Number 27 on Jersey -->
+    <text x="0" y="25" fill="#F5F3EB" font-family="'Oswald', sans-serif" font-size="44" font-weight="900" text-anchor="middle" letter-spacing="2">
+      2<tspan fill="#B7F34A">7</tspan>
+    </text>
+    <text x="0" y="50" fill="#8491A3" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" text-anchor="middle" letter-spacing="4">PLAYER</text>
+  </g>
+  <!-- Color Swatches Selector Left -->
+  <g transform="translate(60, 90)">
+    <rect width="130" height="150" rx="6" fill="#101827" stroke="#263449" stroke-width="1.5"/>
+    <text x="14" y="26" fill="#8491A3" font-family="'Inter', sans-serif" font-size="10" font-weight="bold">KIT PALETTE</text>
+    <circle cx="35" cy="55" r="14" fill="#B7F34A" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="75" cy="55" r="14" fill="#FF704D"/>
+    <circle cx="35" cy="95" r="14" fill="#38BDF8"/>
+    <circle cx="75" cy="95" r="14" fill="#101827" stroke="#263449"/>
+    <text x="14" y="132" fill="#B7F34A" font-family="'Inter', sans-serif" font-size="10">Active: Electric Lime</text>
+  </g>
+  <!-- Bat Decal Customizer Right -->
+  <g transform="translate(430, 90)">
+    <rect width="130" height="150" rx="6" fill="#101827" stroke="#263449" stroke-width="1.5"/>
+    <text x="14" y="26" fill="#8491A3" font-family="'Inter', sans-serif" font-size="10" font-weight="bold">WILLOW STICKERS</text>
+    <rect x="25" y="45" width="80" height="18" rx="3" fill="#B7F34A"/>
+    <text x="65" y="58" fill="#101827" font-family="'Oswald', sans-serif" font-size="10" font-weight="bold" text-anchor="middle">CRICKET27 PRO</text>
+    <rect x="25" y="72" width="80" height="18" rx="3" fill="#FF704D"/>
+    <text x="65" y="85" fill="#FFFFFF" font-family="'Oswald', sans-serif" font-size="10" font-weight="bold" text-anchor="middle">STRIKER ELITE</text>
+    <rect x="25" y="99" width="80" height="18" rx="3" fill="#162238" stroke="#32445E"/>
+    <text x="65" y="112" fill="#8491A3" font-family="'Oswald', sans-serif" font-size="10" font-weight="bold" text-anchor="middle">CLASSIC WILLOW</text>
+  </g>
+  <!-- Technical Legend -->
+  <text x="30" y="375" fill="#8491A3" font-family="'Inter', sans-serif" font-size="11" font-weight="600" letter-spacing="1">CUSTOMISATION &bull; KITS, STICKERS &amp; VENUES</text>
+  <text x="570" y="375" fill="#B7F34A" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" letter-spacing="2" text-anchor="end">TACTICAL STUDIO</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="newsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1624"/>
+      <stop offset="100%" stop-color="#182337"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#newsBg)"/>
+
+  <!-- Code & Graph Matrix Texture -->
+  <g opacity="0.15" stroke="#B7F34A" stroke-width="1.5">
+    <line x1="0" y1="120" x2="1280" y2="120"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="480" x2="1280" y2="480"/>
+    <line x1="0" y1="600" x2="1280" y2="600"/>
+    <line x1="320" y1="0" x2="320" y2="720"/>
+    <line x1="640" y1="0" x2="640" y2="720"/>
+    <line x1="960" y1="0" x2="960" y2="720"/>
+  </g>
+
+  <!-- Tag Pill -->
+  <rect x="80" y="80" width="220" height="36" rx="8" fill="#101827" stroke="#B7F34A" stroke-width="1.5"/>
+  <text x="190" y="103" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#B7F34A" text-anchor="middle" letter-spacing="3">DEVLOG &bull; DISPATCH 01</text>
+
+  <!-- Headline -->
+  <text x="80" y="240" font-family="'Oswald', sans-serif" font-weight="700" font-size="64" fill="#F5F3EB" letter-spacing="2">
+    THE ARCHITECTURE OF
+  </text>
+  <text x="80" y="320" font-family="'Oswald', sans-serif" font-weight="700" font-size="64" fill="#B7F34A" letter-spacing="2">
+    2D CRICKET PHYSICS
+  </text>
+
+  <!-- Summary text -->
+  <text x="80" y="400" font-family="'Inter', sans-serif" font-size="18" fill="#8491A3" letter-spacing="1">
+    How sub-millisecond input windows and seam dynamics recreate the authentic bat-to-ball feeling.
+  </text>
+
+  <!-- Graph Curve Overlay -->
+  <path d="M 600 560 Q 840 380 1120 460" stroke="#FF704D" stroke-width="4" stroke-dasharray="6,4" fill="none"/>
+  <circle cx="1120" cy="460" r="8" fill="#FF704D"/>
+
+  <!-- Brand Signature -->
+  <text x="80" y="640" font-family="'Oswald', sans-serif" font-weight="700" font-size="28" fill="#F5F3EB">
+    CRICKET<tspan fill="#B7F34A">27</tspan>
+  </text>
+  <text x="220" y="638" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3" letter-spacing="4">
+    OFFICIAL STUDIO ANNOUNCEMENT
+  </text>
+</svg>

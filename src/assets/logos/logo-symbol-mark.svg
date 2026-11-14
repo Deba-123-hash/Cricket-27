@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="limeGradSymbol" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8F76B"/>
+      <stop offset="100%" stop-color="#B7F34A"/>
+    </linearGradient>
+  </defs>
+  <!-- Hexagonal Athletic Shield -->
+  <polygon points="64,8 116,36 116,92 64,120 12,92 12,36" fill="#182337" stroke="url(#limeGradSymbol)" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Curved Cricket Ball Seams -->
+  <path d="M 36 36 Q 64 64 36 92" stroke="#263449" stroke-width="3" stroke-dasharray="3,3" stroke-linecap="round"/>
+  <path d="M 92 36 Q 64 64 92 92" stroke="#263449" stroke-width="3" stroke-dasharray="3,3" stroke-linecap="round"/>
+  <!-- Monogram 27 -->
+  <text x="64" y="76" font-family="'Oswald', 'Bebas Neue', sans-serif" font-weight="700" font-size="46" fill="#B7F34A" text-anchor="middle">27</text>
+  <!-- Accent Energy Node -->
+  <circle cx="100" cy="30" r="4" fill="#FF704D"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="limeGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8F76B"/>
+      <stop offset="100%" stop-color="#B7F34A"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#B7F34A" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Crest Symbol -->
+  <g transform="translate(16, 12)">
+    <!-- Hexagonal Shield -->
+    <polygon points="48,4 88,26 88,74 48,96 8,74 8,26" fill="#182337" stroke="url(#limeGradPrimary)" stroke-width="3" stroke-linejoin="round" filter="url(#subtleGlow)"/>
+    <!-- Cricket Ball Seams -->
+    <path d="M 28 26 Q 48 50 28 74" stroke="#263449" stroke-width="2.5" stroke-dasharray="3,3" stroke-linecap="round"/>
+    <path d="M 68 26 Q 48 50 68 74" stroke="#263449" stroke-width="2.5" stroke-dasharray="3,3" stroke-linecap="round"/>
+    <!-- Central Number 27 -->
+    <text x="48" y="60" font-family="'Oswald', 'Bebas Neue', sans-serif" font-weight="700" font-size="34" fill="#B7F34A" text-anchor="middle" letter-spacing="0.5">27</text>
+    <!-- Coral Energy Spark -->
+    <circle cx="76" cy="22" r="3" fill="#FF704D"/>
+  </g>
+
+  <!-- Typography: CRICKET 27 -->
+  <text x="132" y="68" font-family="'Oswald', sans-serif" font-weight="700" font-size="46" fill="#F5F3EB" letter-spacing="3">CRICKET</text>
+  <text x="330" y="68" font-family="'Oswald', sans-serif" font-weight="700" font-size="46" fill="#B7F34A" letter-spacing="2">27</text>
+
+  <!-- Tagline: BEYOND THE BOUNDARY -->
+  <text x="134" y="94" font-family="'Inter', sans-serif" font-weight="600" font-size="12" fill="#8491A3" letter-spacing="6">BEYOND THE BOUNDARY</text>
+  
+  <!-- Subtle Pitch Crease Accent Line -->
+  <line x1="392" y1="90" x2="480" y2="90" stroke="#B7F34A" stroke-width="2" stroke-linecap="round"/>
+</svg>

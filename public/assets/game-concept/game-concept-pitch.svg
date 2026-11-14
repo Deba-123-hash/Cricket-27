@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="conceptBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B111D"/>
+      <stop offset="100%" stop-color="#162034"/>
+    </linearGradient>
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#B7F34A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#conceptBg)"/>
+
+  <!-- Tactical Radar Grid Lines -->
+  <line x1="960" y1="80" x2="960" y2="1000" stroke="#263449" stroke-width="1.5" stroke-dasharray="6,6"/>
+  <line x1="320" y1="540" x2="1600" y2="540" stroke="#263449" stroke-width="1.5" stroke-dasharray="6,6"/>
+
+  <!-- Outer Boundary (Deep Fielders Ring) -->
+  <circle cx="960" cy="540" r="440" fill="none" stroke="#32445E" stroke-width="3"/>
+  <circle cx="960" cy="540" r="440" fill="url(#ringGlow)"/>
+
+  <!-- 30-Yard Circle (Inner Ring) -->
+  <circle cx="960" cy="540" r="240" fill="#182337" fill-opacity="0.5" stroke="#B7F34A" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- Central Pitch Strip -->
+  <rect x="915" y="420" width="90" height="240" rx="4" fill="#101827" stroke="#263449" stroke-width="2"/>
+  <line x1="915" y1="460" x2="1005" y2="460" stroke="#B7F34A" stroke-width="2"/>
+  <line x1="915" y1="620" x2="1005" y2="620" stroke="#B7F34A" stroke-width="2"/>
+
+  <!-- Delivery Trajectory Vector (Outswinger from bowler to batter) -->
+  <path d="M 960 620 C 975 560, 935 500, 960 460" stroke="#FF704D" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="960" cy="460" r="6" fill="#FF704D"/>
+
+  <!-- Fielders Tactical Markers -->
+  <!-- Wicketkeeper & Slips -->
+  <circle cx="960" cy="425" r="7" fill="#B7F34A"/>
+  <circle cx="990" cy="430" r="6" fill="#B7F34A"/>
+  <circle cx="1015" cy="445" r="6" fill="#B7F34A"/>
+  <!-- Point, Cover, Mid-off -->
+  <circle cx="1120" cy="490" r="6" fill="#B7F34A"/>
+  <circle cx="1110" cy="580" r="6" fill="#B7F34A"/>
+  <circle cx="1020" cy="670" r="6" fill="#B7F34A"/>
+  <!-- Square leg, Mid-on, Mid-wicket -->
+  <circle cx="820" cy="490" r="6" fill="#B7F34A"/>
+  <circle cx="810" cy="580" r="6" fill="#B7F34A"/>
+  <circle cx="900" cy="670" r="6" fill="#B7F34A"/>
+  <!-- Deep Boundary Patrol -->
+  <circle cx="1340" cy="380" r="6" fill="#FF704D"/>
+  <circle cx="620" cy="740" r="6" fill="#FF704D"/>
+
+  <!-- UI Telemetry Panel Overlay -->
+  <g transform="translate(1320, 120)">
+    <rect width="480" height="240" rx="10" fill="#182337" stroke="#263449" stroke-width="2"/>
+    <text x="30" y="45" font-family="'Oswald', sans-serif" font-weight="700" font-size="20" fill="#F5F3EB" letter-spacing="1">FIELD DEPLOYMENT RADAR</text>
+    <text x="30" y="75" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3">PRESET: ATTACKING OFF-STUMP &bull; 6-3 FIELD</text>
+    <line x1="30" y1="95" x2="450" y2="95" stroke="#263449"/>
+    
+    <text x="30" y="130" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3">Inner Ring Coverage</text>
+    <text x="450" y="130" font-family="'Oswald', sans-serif" font-weight="700" font-size="16" fill="#B7F34A" text-anchor="end">7 IN RING</text>
+
+    <text x="30" y="165" font-family="'Inter', sans-serif" font-size="12" fill="#8491A3">Boundary Patrol</text>
+    <text x="450" y="165" font-family="'Oswald', sans-serif" font-weight="700" font-size="16" fill="#FF704D" text-anchor="end">2 SWEEPERS</text>
+
+    <text x="30" y="205" font-family="'Oswald', sans-serif" font-size="14" fill="#B7F34A" letter-spacing="1">TACTICAL ADVANTAGE: +12% DOT BALL PROBABILITY</text>
+  </g>
+
+  <!-- Title Bottom -->
+  <text x="120" y="1000" font-family="'Oswald', sans-serif" font-weight="700" font-size="44" fill="#F5F3EB" letter-spacing="3">
+    2D CRICKET GAME CONCEPT &bull; FIELD TACTICS SYSTEM
+  </text>
+</svg>

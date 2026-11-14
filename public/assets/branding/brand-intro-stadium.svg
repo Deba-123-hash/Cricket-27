@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stadiumDarkGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#080D18"/>
+      <stop offset="50%" stop-color="#101827"/>
+      <stop offset="100%" stop-color="#182337"/>
+    </linearGradient>
+    <radialGradient id="centerPitchSpot" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#B7F34A" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#263449" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#101827" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#stadiumDarkGrad)"/>
+
+  <!-- Stadium Rings / Tiers -->
+  <ellipse cx="960" cy="580" rx="920" ry="460" fill="none" stroke="#263449" stroke-width="4"/>
+  <ellipse cx="960" cy="590" rx="840" ry="410" fill="none" stroke="#32445E" stroke-width="2"/>
+  <ellipse cx="960" cy="600" rx="760" ry="360" fill="#162034" opacity="0.6"/>
+  <ellipse cx="960" cy="620" rx="660" ry="300" fill="#141D2E"/>
+  <ellipse cx="960" cy="630" rx="560" ry="240" fill="url(#centerPitchSpot)"/>
+
+  <!-- Boundary Line -->
+  <ellipse cx="960" cy="640" rx="480" ry="200" fill="none" stroke="#B7F34A" stroke-width="3" stroke-dasharray="8,6"/>
+
+  <!-- Central Pitch -->
+  <rect x="910" y="520" width="100" height="240" rx="6" fill="#182337" stroke="#32445E" stroke-width="2"/>
+  <line x1="910" y1="560" x2="1010" y2="560" stroke="#B7F34A" stroke-width="2.5"/>
+  <line x1="910" y1="720" x2="1010" y2="720" stroke="#B7F34A" stroke-width="2.5"/>
+
+  <!-- Stumps -->
+  <g fill="#FF704D">
+    <circle cx="940" cy="540" r="2.5"/>
+    <circle cx="960" cy="540" r="2.5"/>
+    <circle cx="980" cy="540" r="2.5"/>
+    <circle cx="940" cy="740" r="2.5"/>
+    <circle cx="960" cy="740" r="2.5"/>
+    <circle cx="980" cy="740" r="2.5"/>
+  </g>
+
+  <!-- Stadium Floodlight Arrays -->
+  <g fill="#B7F34A">
+    <!-- North-West Lights -->
+    <circle cx="360" cy="180" r="16" opacity="0.9"/>
+    <circle cx="400" cy="190" r="12" opacity="0.8"/>
+    <circle cx="440" cy="205" r="10" opacity="0.7"/>
+    <!-- North-East Lights -->
+    <circle cx="1560" cy="180" r="16" opacity="0.9"/>
+    <circle cx="1520" cy="190" r="12" opacity="0.8"/>
+    <circle cx="1480" cy="205" r="10" opacity="0.7"/>
+  </g>
+
+  <!-- Large Watermark Monogram Background -->
+  <text x="960" y="440" font-family="'Oswald', sans-serif" font-weight="700" font-size="220" fill="#263449" fill-opacity="0.25" text-anchor="middle">
+    27
+  </text>
+
+  <!-- Editorial Info Text -->
+  <text x="960" y="980" font-family="'Oswald', sans-serif" font-weight="700" font-size="44" fill="#F5F3EB" text-anchor="middle" letter-spacing="4">
+    STADIUM ATMOSPHERE &bull; BRAND INTRODUCTION ARTWORK
+  </text>
+  <text x="960" y="1015" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#8491A3" text-anchor="middle" letter-spacing="6">
+    CINEMATIC NIGHT MATCH ARENA &bull; 16:9 PROMOTIONAL ASSET
+  </text>
+</svg>
