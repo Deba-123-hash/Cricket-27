@@ -7,6 +7,12 @@ Saved/*
 Build/*
 !Build/Scripts/*
 
+# Node & Frontend build files
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+
 # IDE and build tool files
 .vs/
 .vscode/
