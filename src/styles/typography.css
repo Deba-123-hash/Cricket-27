@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CRICKET27 TYPOGRAPHY FOUNDATION
+   CRICKET27 TYPOGRAPHY FOUNDATION — MASTER PROMPT 03
    ========================================================================== */
 
 /* Heading Hierarchy */
@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  line-height: 1.1;
+  line-height: 1.05;
   color: var(--color-warm-white);
   font-weight: 700;
   overflow-wrap: break-word;
@@ -15,16 +15,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw + 0.75rem, 4.5rem);
-  letter-spacing: 0.04em;
+  font-size: clamp(2.25rem, 5.5vw + 0.75rem, 5rem);
+  letter-spacing: 0.03em;
+  line-height: 0.98;
 }
 
 h2 {
-  font-size: clamp(1.65rem, 3.5vw + 0.4rem, 3.25rem);
+  font-size: clamp(1.75rem, 3.75vw + 0.4rem, 3.5rem);
+  letter-spacing: 0.03em;
+  line-height: 1.02;
 }
 
 h3 {
-  font-size: clamp(1.35rem, 2.2vw + 0.3rem, 2.25rem);
+  font-size: clamp(1.35rem, 2.25vw + 0.3rem, 2.25rem);
+  letter-spacing: 0.03em;
 }
 
 h4 {
@@ -32,17 +36,17 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1.1rem, 1vw + 0.25rem, 1.35rem);
+  font-size: clamp(1rem, 1vw + 0.25rem, 1.35rem);
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   letter-spacing: 0.06em;
 }
 
 /* Paragraph & Lead Styles */
 p {
-  color: var(--color-warm-white);
+  color: var(--color-text-secondary);
   font-size: 1rem;
   line-height: 1.65;
 }
@@ -50,7 +54,7 @@ p {
 .lead {
   font-size: clamp(1.125rem, 1.25vw + 0.5rem, 1.35rem);
   line-height: 1.7;
-  color: var(--color-muted);
+  color: var(--color-warm-white);
   font-weight: 400;
 }
 
@@ -67,19 +71,19 @@ p {
 
 /* Gradient & Brand Text Utilities */
 .text-gradient-lime {
-  background: linear-gradient(135deg, #FFFFFF 0%, #B7F34A 60%, #85C421 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #B7F34A 55%, #85C421 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-coral {
-  background: linear-gradient(135deg, #FFFFFF 0%, #FF8A6B 60%, #FF704D 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FF8A6B 55%, #FF704D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-white {
-  background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

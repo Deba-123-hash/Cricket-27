@@ -6,26 +6,29 @@
 @tailwind utilities;
 
 /* ==========================================================================
-   CRICKET27 DESIGN TOKENS & CSS VARIABLES
+   CRICKET27 DESIGN TOKENS & CSS VARIABLES — MASTER PROMPT 03
    ========================================================================== */
 :root {
-  /* Brand Colours */
-  --color-midnight: #101827;
-  --color-midnight-dark: #0B111D;
-  --color-midnight-light: #162034;
+  /* Brand Colours (High-Contrast Dark Theme) */
+  --color-midnight: #10141C;
+  --color-midnight-dark: #080A0F;
+  --color-midnight-light: #171D28;
+  --color-midnight-elevated: #202735;
   --color-lime: #B7F34A;
   --color-lime-hover: #C8F76B;
-  --color-warm-white: #F5F3EB;
-  --color-slate: #263449;
-  --color-slate-card: #182337;
-  --color-slate-border: #32445E;
+  --color-warm-white: #F5F7FA;
+  --color-slate: #2A3443;
+  --color-slate-card: #171D28;
+  --color-slate-border: #364356;
   --color-coral: #FF704D;
-  --color-muted: #8491A3;
+  --color-gold: #F2B84B;
+  --color-muted: #A7B0BE;
+  --color-subtle: #737E8E;
 
   /* Feedback & Status States */
-  --color-success: #22C55E;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  --color-success: #39B980;
+  --color-warning: #E8A33A;
+  --color-error: #E05252;
   --color-info: #38BDF8;
 
   /* Semantic Aliases */
@@ -33,18 +36,19 @@
   --color-primary-hover: var(--color-lime-hover);
   --color-secondary: var(--color-slate);
   --color-accent: var(--color-coral);
-  --color-bg-base: var(--color-midnight);
-  --color-bg-elevated: var(--color-midnight-light);
+  --color-bg-base: var(--color-midnight-dark);
+  --color-bg-elevated: var(--color-midnight);
   --color-bg-card: var(--color-slate-card);
   --color-text-main: var(--color-warm-white);
-  --color-text-muted: var(--color-muted);
+  --color-text-secondary: var(--color-muted);
+  --color-text-muted: var(--color-subtle);
   --color-border: var(--color-slate);
 
   /* Surface Hierarchy */
-  --surface-base: var(--color-midnight);
-  --surface-elevated: var(--color-midnight-light);
+  --surface-base: var(--color-midnight-dark);
+  --surface-elevated: var(--color-midnight);
   --surface-card: var(--color-slate-card);
-  --surface-overlay: rgba(16, 24, 39, 0.88);
+  --surface-overlay: rgba(8, 10, 15, 0.92);
   --border-subtle: var(--color-slate);
   --border-strong: var(--color-slate-border);
   --border-interactive: var(--color-lime);
@@ -74,7 +78,7 @@
   /* Container Widths */
   --container-sm: 640px;
   --container-md: 896px;
-  --container-lg: 1080px;
+  --container-lg: 1120px;
   --container-xl: 1280px;
 
   /* Transitions & Animation Timing */
@@ -152,7 +156,7 @@ button {
 /* Text Selection */
 ::selection {
   background-color: var(--color-lime);
-  color: var(--color-midnight);
+  color: #080A0F;
 }
 
 /* Accessible Focus Ring */
@@ -168,7 +172,7 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-midnight);
+  background: #080A0F;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -218,4 +222,3 @@ button {
     font-size: 16px !important;
   }
 }
-

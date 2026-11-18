@@ -40,6 +40,7 @@ export const ExperienceCard = forwardRef(({ item, onNavigate }, ref) => {
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-midnight border-b border-slate/60">
         <CricketImage
           src={image}
+          fallbackSrc={item.fallbackImage || item.fallbackSrc}
           alt={`${title} visual concept`}
           title={title}
           icon={icon}
