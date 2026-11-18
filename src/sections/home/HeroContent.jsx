@@ -107,18 +107,18 @@ export const HeroContent = () => {
         A new cricket gaming vision built around the passion, intensity and excitement of the sport. Discover the world of <strong className="text-warm-white font-semibold">CRICKET27</strong>.
       </motion.p>
 
-      {/* Primary Action CTA */}
+      {/* Sequence Step 6: Primary Action CTA */}
       <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
         <motion.div variants={itemFadeUp}>
           <Button
-            to={ROUTES.ABOUT}
+            to={ROUTES.FEATURES}
             variant="primary"
             size="lg"
             className="w-full sm:w-auto shadow-lime-glow font-heading uppercase tracking-wider justify-center"
             icon={ArrowRight}
             iconPosition="right"
           >
-            DISCOVER CRICKET27
+            EXPLORE FEATURES
           </Button>
         </motion.div>
       </div>

@@ -5,7 +5,7 @@ import AppRoutes from '../../src/routes/AppRoutes';
 import { UIProvider } from '../../src/context/UIContext';
 import { ToastProvider } from '../../src/context/ToastContext';
 
-describe('All 10 Website Routes & 404 Routing Integrity', () => {
+describe('Website Routes & Navigation Routing Integrity', () => {
   const WAIT_OPTS = { timeout: 3500 };
 
   const renderRoute = (initialPath) => {
@@ -20,70 +20,70 @@ describe('All 10 Website Routes & 404 Routing Integrity', () => {
     );
   };
 
-  it('renders Route 1: Home (/)', async () => {
+  it('renders Route: Home (/)', async () => {
     renderRoute('/');
     await waitFor(() => {
       expect(screen.getAllByRole('link', { name: /cricket27 homepage/i }).length).toBeGreaterThanOrEqual(1);
     }, WAIT_OPTS);
   });
 
-  it('renders Route 2: About (/about)', async () => {
+  it('redirects removed /about to Home (/)', async () => {
     renderRoute('/about');
     await waitFor(() => {
-      expect(screen.getByText(/we are cricket27/i)).toBeInTheDocument();
+      expect(screen.getAllByRole('link', { name: /cricket27 homepage/i }).length).toBeGreaterThanOrEqual(1);
     }, WAIT_OPTS);
   });
 
-  it('redirects Route 3: /our-game gracefully to Home', async () => {
+  it('redirects removed /our-game to Features (/features)', async () => {
     renderRoute('/our-game');
     await waitFor(() => {
-      expect(screen.getAllByRole('link', { name: /cricket27 homepage/i }).length).toBeGreaterThanOrEqual(1);
+      expect(screen.getByText(/every detail/i)).toBeInTheDocument();
     }, WAIT_OPTS);
   });
 
-  it('redirects Route 4: /features gracefully to Home', async () => {
+  it('renders Route: Features (/features)', async () => {
     renderRoute('/features');
     await waitFor(() => {
-      expect(screen.getAllByRole('link', { name: /cricket27 homepage/i }).length).toBeGreaterThanOrEqual(1);
+      expect(screen.getByText(/every detail/i)).toBeInTheDocument();
     }, WAIT_OPTS);
   });
 
-  it('renders Route 5: Media (/media)', async () => {
+  it('renders Route: Media (/media)', async () => {
     renderRoute('/media');
     await waitFor(() => {
       expect(screen.getByText(/the world of/i)).toBeInTheDocument();
     }, WAIT_OPTS);
   });
 
-  it('renders Route 6: News (/news)', async () => {
+  it('renders Route: News (/news)', async () => {
     renderRoute('/news');
     await waitFor(() => {
       expect(screen.getByText(/news\. stories\./i)).toBeInTheDocument();
     }, WAIT_OPTS);
   });
 
-  it('renders Route 7: News Details (/news/the-vision-behind-cricket27)', async () => {
+  it('renders Route: News Details (/news/the-vision-behind-cricket27)', async () => {
     renderRoute('/news/the-vision-behind-cricket27');
     await waitFor(() => {
       expect(screen.getAllByText(/the vision behind cricket27/i).length).toBeGreaterThanOrEqual(1);
     }, WAIT_OPTS);
   });
 
-  it('renders Route 8: Community (/community)', async () => {
+  it('renders Route: Community (/community)', async () => {
     renderRoute('/community');
     await waitFor(() => {
       expect(screen.getByText(/one game\. one passion\./i)).toBeInTheDocument();
     }, WAIT_OPTS);
   });
 
-  it('renders Route 9: FAQ (/faq)', async () => {
+  it('renders Route: FAQ (/faq)', async () => {
     renderRoute('/faq');
     await waitFor(() => {
       expect(screen.getByText(/got questions\?/i)).toBeInTheDocument();
     }, WAIT_OPTS);
   });
 
-  it('renders Route 10: Contact (/contact)', async () => {
+  it('renders Route: Contact (/contact)', async () => {
     renderRoute('/contact');
     await waitFor(() => {
       expect(screen.getByText(/let's start a/i)).toBeInTheDocument();

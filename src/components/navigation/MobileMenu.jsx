@@ -121,9 +121,9 @@ export const MobileMenu = ({ isOpen, onClose }) => {
 
             {/* Bottom Actions & Community Channels */}
             <div className="pt-6 border-t border-slate space-y-5">
-              {/* Primary Game CTA */}
+              {/* Primary Features CTA */}
               <Button
-                to={ROUTES.OUR_GAME}
+                to={ROUTES.FEATURES}
                 onClick={onClose}
                 variant="primary"
                 size="md"
@@ -131,7 +131,7 @@ export const MobileMenu = ({ isOpen, onClose }) => {
                 icon={ArrowRight}
                 iconPosition="right"
               >
-                Explore Game Concept
+                Explore Features
               </Button>
 
               {/* Social Channels Stack */}

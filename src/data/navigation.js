@@ -2,11 +2,11 @@ import { ROUTES, SOCIAL_PLATFORMS } from '../utils/constants';
 
 /**
  * Primary Desktop Center Navigation Links
- * Core Brand Navigation: Home, About
+ * Core Brand Navigation: Home, Features
  */
 export const PRIMARY_NAV_LINKS = [
   { label: 'Home', path: ROUTES.HOME },
-  { label: 'About', path: ROUTES.ABOUT },
+  { label: 'Features', path: ROUTES.FEATURES },
 ];
 
 /**
@@ -14,7 +14,7 @@ export const PRIMARY_NAV_LINKS = [
  */
 export const MOBILE_NAV_LINKS = [
   { label: 'Home', path: ROUTES.HOME, badge: 'Home' },
-  { label: 'About Us', path: ROUTES.ABOUT },
+  { label: 'Features', path: ROUTES.FEATURES, badge: 'Core' },
 ];
 
 /**
@@ -30,14 +30,13 @@ export const FOOTER_COLUMNS = {
     title: 'Explore',
     links: [
       { label: 'Home', path: ROUTES.HOME },
-      { label: 'About Us', path: ROUTES.ABOUT },
+      { label: 'Features', path: ROUTES.FEATURES },
     ],
   },
   UPDATES: {
     title: 'Brand Vision',
     links: [
-      { label: 'Brand Philosophy', path: ROUTES.ABOUT },
-      { label: 'Studio Origins', path: ROUTES.ABOUT },
+      { label: 'Feature Concepts', path: ROUTES.FEATURES },
     ],
   },
   SOCIAL: {

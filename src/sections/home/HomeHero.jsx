@@ -1,5 +1,3 @@
-import { motion, useReducedMotion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import Container from '../../components/common/Container';
 import HeroBackground from '../../components/common/HeroBackground';
 import HeroContent from './HeroContent';
@@ -28,18 +26,9 @@ const HOME_HERO_SOURCES = [
 ];
 
 export const HomeHero = () => {
-  const shouldReduceMotion = useReducedMotion();
-
-  const handleScrollDown = () => {
-    const nextSection = document.getElementById('about-brand') || document.getElementById('home-intro') || document.getElementById('main-content');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section
-      className="relative min-h-[520px] sm:min-h-[calc(100vh-5rem)] lg:min-h-screen flex items-center justify-between -mt-20 pt-24 pb-16 overflow-hidden bg-midnight select-none"
+      className="relative min-h-[calc(100vh-5rem)] flex items-center justify-between -mt-20 pt-24 pb-16 overflow-hidden bg-midnight select-none"
       aria-label="CRICKET27 Homepage Hero"
     >
       {/* =========================================================================
@@ -101,33 +90,6 @@ export const HomeHero = () => {
           <div className="hidden lg:block lg:col-span-4 xl:col-span-5 pointer-events-none" />
         </div>
       </Container>
-
-      {/* =========================================================================
-          LAYER 4: MINIMAL SCROLL INDICATOR
-          ========================================================================= */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: shouldReduceMotion ? 0 : 0.9, duration: 0.5 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1.5"
-      >
-        <button
-          type="button"
-          onClick={handleScrollDown}
-          className="flex flex-col items-center gap-1 text-[10px] font-mono tracking-widest uppercase text-muted-text hover:text-lime transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-lime rounded p-1 group"
-          aria-label="Scroll down to explore website overview"
-        >
-          <span className="group-hover:tracking-[0.25em] transition-all duration-200">
-            SCROLL TO EXPLORE
-          </span>
-          <motion.div
-            animate={shouldReduceMotion ? {} : { y: [0, 4, 0] }}
-            transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
-          >
-            <ChevronDown className="w-4 h-4 text-lime" aria-hidden="true" />
-          </motion.div>
-        </button>
-      </motion.div>
     </section>
   );
 };

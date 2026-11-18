@@ -89,16 +89,16 @@ export const Navbar = () => {
 
             {/* Right: Explore Game CTA Action & Mobile Toggle */}
             <div className="flex items-center gap-3">
-              {/* Desktop About CTA Button */}
+              {/* Desktop Explore Features CTA Button */}
               <Button
-                to={ROUTES.ABOUT}
+                to={ROUTES.FEATURES}
                 variant="primary"
                 size="sm"
                 className="hidden sm:inline-flex shadow-lime-glow font-heading uppercase tracking-wider"
                 icon={ArrowRight}
                 iconPosition="right"
               >
-                About Us
+                Explore Features
               </Button>
 
               {/* Mobile Hamburger Toggle Button */}

@@ -1,10 +1,7 @@
 import usePageTitle from '../hooks/usePageTitle';
 import PageTransition from '../components/animations/PageTransition';
 import SEO from '../components/common/SEO';
-
-// Homepage Sections
 import HomeHero from '../sections/home/HomeHero';
-import AboutSection from '../sections/home/AboutSection';
 
 export const Home = () => {
   usePageTitle('Home — Beyond The Boundary');
@@ -17,11 +14,8 @@ export const Home = () => {
         canonical="/"
       />
 
-      {/* 1. Cinematic Hero Section */}
+      {/* Cinematic Hero Section */}
       <HomeHero />
-
-      {/* 2. About CRICKET27 */}
-      <AboutSection />
     </PageTransition>
   );
 };
