@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight, Compass, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { ROUTES } from '../../utils/constants';
 import Button from '../../components/common/Button';
 import { EASINGS } from '../../utils/animations';
@@ -107,31 +107,16 @@ export const HeroContent = () => {
         A new cricket gaming vision built around the passion, intensity and excitement of the sport. Discover the world of <strong className="text-warm-white font-semibold">CRICKET27</strong>.
       </motion.p>
 
-      {/* Sequence Step 6 & 7: Primary and Secondary Action CTAs */}
+      {/* Primary Action CTA */}
       <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-        {/* Step 6: Primary CTA */}
         <motion.div variants={itemFadeUp}>
           <Button
-            to={ROUTES.OUR_GAME}
+            to={ROUTES.ABOUT}
             variant="primary"
             size="lg"
             className="w-full sm:w-auto shadow-lime-glow font-heading uppercase tracking-wider justify-center"
             icon={ArrowRight}
             iconPosition="right"
-          >
-            EXPLORE OUR GAME
-          </Button>
-        </motion.div>
-
-        {/* Step 7: Secondary CTA */}
-        <motion.div variants={itemFadeUp}>
-          <Button
-            to={ROUTES.ABOUT}
-            variant="outline"
-            size="lg"
-            className="w-full sm:w-auto font-heading uppercase tracking-wider justify-center border-slate hover:border-lime"
-            icon={Compass}
-            iconPosition="left"
           >
             DISCOVER CRICKET27
           </Button>

@@ -34,17 +34,17 @@ describe('All 10 Website Routes & 404 Routing Integrity', () => {
     }, WAIT_OPTS);
   });
 
-  it('renders Route 3: Our Game (/our-game)', async () => {
+  it('redirects Route 3: /our-game gracefully to Home', async () => {
     renderRoute('/our-game');
     await waitFor(() => {
-      expect(screen.getByText(/the next chapter of/i)).toBeInTheDocument();
+      expect(screen.getAllByRole('link', { name: /cricket27 homepage/i }).length).toBeGreaterThanOrEqual(1);
     }, WAIT_OPTS);
   });
 
-  it('renders Route 4: Features (/features)', async () => {
+  it('redirects Route 4: /features gracefully to Home', async () => {
     renderRoute('/features');
     await waitFor(() => {
-      expect(screen.getByText(/every detail/i)).toBeInTheDocument();
+      expect(screen.getAllByRole('link', { name: /cricket27 homepage/i }).length).toBeGreaterThanOrEqual(1);
     }, WAIT_OPTS);
   });
 

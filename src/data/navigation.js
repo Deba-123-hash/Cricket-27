@@ -2,21 +2,11 @@ import { ROUTES, SOCIAL_PLATFORMS } from '../utils/constants';
 
 /**
  * Primary Desktop Center Navigation Links
- * Core Brand Navigation: Home, About, Our Game, Features
+ * Core Brand Navigation: Home, About
  */
 export const PRIMARY_NAV_LINKS = [
   { label: 'Home', path: ROUTES.HOME },
   { label: 'About', path: ROUTES.ABOUT },
-  {
-    label: 'Our Game',
-    path: ROUTES.OUR_GAME,
-    hasDropdown: true,
-    dropdownItems: [
-      { label: 'Game Vision & Concept', path: ROUTES.OUR_GAME, description: 'Core tactical design pillars' },
-      { label: 'Gameplay Features', path: ROUTES.FEATURES, description: 'Sub-millisecond batting & bowling' },
-    ],
-  },
-  { label: 'Features', path: ROUTES.FEATURES },
 ];
 
 /**
@@ -25,8 +15,6 @@ export const PRIMARY_NAV_LINKS = [
 export const MOBILE_NAV_LINKS = [
   { label: 'Home', path: ROUTES.HOME, badge: 'Home' },
   { label: 'About Us', path: ROUTES.ABOUT },
-  { label: 'Our Game', path: ROUTES.OUR_GAME, badge: 'Core' },
-  { label: 'Features', path: ROUTES.FEATURES },
 ];
 
 /**
@@ -43,16 +31,13 @@ export const FOOTER_COLUMNS = {
     links: [
       { label: 'Home', path: ROUTES.HOME },
       { label: 'About Us', path: ROUTES.ABOUT },
-      { label: 'Our Game', path: ROUTES.OUR_GAME },
-      { label: 'Features', path: ROUTES.FEATURES },
     ],
   },
   UPDATES: {
     title: 'Brand Vision',
     links: [
       { label: 'Brand Philosophy', path: ROUTES.ABOUT },
-      { label: 'Gameplay Pillars', path: ROUTES.OUR_GAME },
-      { label: 'Feature Concepts', path: ROUTES.FEATURES },
+      { label: 'Studio Origins', path: ROUTES.ABOUT },
     ],
   },
   SOCIAL: {
