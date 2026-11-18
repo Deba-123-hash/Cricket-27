@@ -8,41 +8,33 @@ export const CoreValuesSection = () => {
     {
       number: '01',
       title: 'PASSION',
-      summary: 'We are inspired by the excitement, dedication and spirit of cricket.',
-      description: 'Cricket is rooted in history, drama, and sportsmanship. Every design decision we make is guided by a genuine love for the game and its global community.',
+      description: 'Inspired by the excitement, dedication and timeless sportsmanship of cricket.',
       icon: Flame,
       color: 'text-coral',
-      borderColor: 'border-coral/40',
       badge: 'FOUNDATION',
     },
     {
       number: '02',
       title: 'CREATIVITY',
-      summary: 'We believe fresh ideas and thoughtful design can create a distinctive digital experience.',
-      description: 'From bold typographic treatments to handcrafted stadium vectors, we embrace creative thinking to set a new standard for 2D sports game presentation.',
+      description: 'Bold art direction and thoughtful design defining a distinctive 2D presentation.',
       icon: Lightbulb,
       color: 'text-lime',
-      borderColor: 'border-lime/40',
       badge: 'ART DIRECTION',
     },
     {
       number: '03',
       title: 'INNOVATION',
-      summary: 'We are interested in exploring new possibilities in cricket gaming and digital entertainment.',
-      description: 'We prioritize sub-millisecond input response, real-time ball seam physics, and authentic tactical fielding over generic button-mashing mechanics.',
+      description: 'Sub-millisecond input response, ball seam physics, and authentic tactical fielding.',
       icon: Zap,
       color: 'text-sky-400',
-      borderColor: 'border-sky-400/40',
       badge: 'ENGINEERING',
     },
     {
       number: '04',
       title: 'COMMUNITY',
-      summary: 'We believe cricket is more meaningful when people can share their passion together.',
-      description: 'Sports thrive on shared celebration. We are building an open community where cricket fans, competitive players, and creators contribute their ideas.',
+      description: 'An open environment where cricket fans, gamers, and creators collaborate.',
       icon: Users,
       color: 'text-emerald-400',
-      borderColor: 'border-emerald-400/40',
       badge: 'FELLOWSHIP',
     },
   ];
@@ -69,7 +61,7 @@ export const CoreValuesSection = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-muted-text leading-relaxed">
-            Four guiding principles that shape our creative vision, development roadmap, and relationship with players.
+            Four guiding principles shaping our creative vision, roadmap, and player relationships.
           </p>
         </div>
 
@@ -106,20 +98,15 @@ export const CoreValuesSection = () => {
                     <Icon className={`w-6 h-6 ${item.color}`} />
                   </div>
 
-                  {/* Title & Summary */}
+                  {/* Title & Description */}
                   <div className="space-y-2">
                     <h3 className="text-xl font-heading font-black uppercase text-warm-white group-hover:text-lime transition-colors tracking-wide">
                       {item.title}
                     </h3>
-                    <p className="text-xs font-mono font-semibold text-lime uppercase tracking-wider">
-                      {item.summary}
+                    <p className="text-xs sm:text-sm text-muted-text leading-relaxed">
+                      {item.description}
                     </p>
                   </div>
-
-                  {/* Body Paragraph */}
-                  <p className="text-xs sm:text-sm text-muted-text leading-relaxed">
-                    {item.description}
-                  </p>
                 </div>
 
                 {/* Bottom Card Footer */}

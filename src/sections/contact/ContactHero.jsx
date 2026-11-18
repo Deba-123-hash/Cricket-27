@@ -23,7 +23,6 @@ export const ContactHero = () => {
             alt="Atmospheric cricket stadium arena under night floodlights"
             className="w-full h-full object-cover object-center opacity-25 scale-105"
             loading="eager"
-            fetchPriority="high"
             decoding="async"
             width="1920"
             height="1080"

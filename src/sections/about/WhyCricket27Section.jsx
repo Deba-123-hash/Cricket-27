@@ -8,25 +8,25 @@ export const WhyCricket27Section = () => {
   const characteristics = [
     {
       title: 'CRICKET INSPIRED',
-      description: 'Conceived through authentic cricket appreciation—from classic cover drives to yorker variations.',
+      description: 'Crafted with authentic appreciation for classic drives, yorkers, and crease tactics.',
       icon: Compass,
       accent: 'text-lime',
     },
     {
       title: 'CREATIVE DIRECTION',
-      description: 'Bespoke sports typography, atmospheric stadium lighting, and high-fidelity 2D art.',
+      description: 'Bespoke sports typography, atmospheric stadium lighting, and stylized 2D art.',
       icon: Palette,
       accent: 'text-coral',
     },
     {
       title: 'DIGITAL FIRST',
-      description: 'Engineered for high-refresh displays, broadcast telemetries, and responsive community portals.',
+      description: 'Optimized for high refresh rates, broadcast telemetry, and instant responsiveness.',
       icon: Monitor,
       accent: 'text-sky-400',
     },
     {
       title: 'COMMUNITY MINDED',
-      description: 'Direct player dialogue, transparent development updates, and player-driven feature exploration.',
+      description: 'Direct player dialogue, transparent devlog updates, and collaborative feedback.',
       icon: HeartHandshake,
       accent: 'text-emerald-400',
     },

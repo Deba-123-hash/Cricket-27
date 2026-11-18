@@ -10,7 +10,7 @@ export const HeroBackground = ({
   scale = 'scale-105',
   className = '',
   loading = 'eager',
-  priority = 'high',
+  priority: _priority = 'high',
   children = null,
 }) => {
   const [hasError, setHasError] = useState(!src);
@@ -42,7 +42,6 @@ export const HeroBackground = ({
                 scale
               )}
               loading={loading}
-              fetchPriority={priority}
               decoding="async"
               onError={() => setHasError(true)}
             />
@@ -57,7 +56,6 @@ export const HeroBackground = ({
               scale
             )}
             loading={loading}
-            fetchPriority={priority}
             decoding="async"
             onError={() => setHasError(true)}
           />

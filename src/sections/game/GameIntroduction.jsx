@@ -39,10 +39,7 @@ export const GameIntroduction = () => {
 
             <motion.div variants={fadeIn} className="space-y-4 text-warm-white/80 font-sans leading-relaxed text-base sm:text-lg">
               <p>
-                Cricket is a mental duel of patience, rhythm, and explosive drama. Every ball demands an answer, and every delivery tells a story.
-              </p>
-              <p>
-                <strong className="text-warm-white font-semibold">CRICKET27</strong> strips away synthetic clutter to deliver an elegant, responsive 2D sports experience where reflexes, tactical awareness, and cricket IQ decide the outcome.
+                <strong className="text-warm-white font-semibold">CRICKET27</strong> strips away synthetic clutter to deliver an elegant 2D sports experience where reflexes, tactical awareness, and cricket IQ decide the outcome.
               </p>
             </motion.div>
 
@@ -100,7 +97,7 @@ export const GameIntroduction = () => {
               </div>
 
               {/* Three Strategic Feature Blocks */}
-              <div className="relative z-10 space-y-6">
+              <div className="relative z-10 space-y-5">
                 <div className="flex items-start gap-4">
                   <div className="w-9 h-9 rounded-brand bg-slate/80 border border-slate flex items-center justify-center shrink-0 text-lime mt-0.5">
                     <Target className="w-4 h-4" />
@@ -110,7 +107,7 @@ export const GameIntroduction = () => {
                       Tactile Mechanics
                     </h4>
                     <p className="text-xs text-muted-text mt-1 leading-relaxed">
-                      Every stroke, bouncer, and slip catch feels distinct with tailored vibration cues and visual trajectory lines.
+                      Distinctive stroke feedback, vibration cues, and trajectory lines.
                     </p>
                   </div>
                 </div>
@@ -124,7 +121,7 @@ export const GameIntroduction = () => {
                       Strategic Chess
                     </h4>
                     <p className="text-xs text-muted-text mt-1 leading-relaxed">
-                      Exploit fielding gaps, outwit bowlers with inventive footwork, and adapt instantly to pitch moisture and wear.
+                      Exploit gaps, outwit bowlers with footwork, and read pitch wear.
                     </p>
                   </div>
                 </div>
@@ -138,7 +135,7 @@ export const GameIntroduction = () => {
                       Electric Atmosphere
                     </h4>
                     <p className="text-xs text-muted-text mt-1 leading-relaxed">
-                      Experience the electrifying soundscapes of 80,000 screaming fans under towering stadium floodlights.
+                      Immersive stadium soundscapes and floodlit night match intensity.
                     </p>
                   </div>
                 </div>

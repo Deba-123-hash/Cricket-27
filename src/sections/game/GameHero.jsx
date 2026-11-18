@@ -24,7 +24,6 @@ export const GameHero = () => {
             alt="CRICKET27 international cricket match concept with batsman executing a powerful cover drive under floodlights"
             className="w-full h-full object-cover object-center lg:object-right opacity-40 scale-105"
             loading="eager"
-            fetchPriority="high"
             decoding="async"
             width="1920"
             height="1080"
@@ -77,8 +76,7 @@ export const GameHero = () => {
             variants={fadeIn}
             className="text-base sm:text-xl text-warm-white/80 leading-relaxed font-sans max-w-2xl mb-8 sm:mb-10"
           >
-            A visionary 2D cricket gaming experience crafted for players who live and breathe every delivery.
-            Designed with tactical depth, atmospheric authenticity, and a relentless passion for the sport.
+            A visionary 2D cricket gaming experience crafted with tactical depth, atmospheric arenas, and passion for the sport.
           </motion.p>
 
           {/* CTA Buttons */}

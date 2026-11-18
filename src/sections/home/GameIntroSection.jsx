@@ -99,17 +99,17 @@ export const GameIntroSection = () => {
             </p>
 
             {/* Key Concept Highlights */}
-            <div className="space-y-3 pt-2">
-              <div className="p-3.5 rounded-brand bg-slate-card border border-slate flex items-center gap-3">
+            <div className="space-y-2.5 pt-1">
+              <div className="p-3 rounded-brand bg-slate-card border border-slate flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-lime shrink-0" />
                 <span className="text-xs font-heading font-bold uppercase tracking-wider text-warm-white">
-                  Designed for Tactical Intelligence &bull; Mind-Games at Every Delivery
+                  Tactical Mind-Games at Every Delivery
                 </span>
               </div>
-              <div className="p-3.5 rounded-brand bg-slate-card border border-slate flex items-center gap-3">
+              <div className="p-3 rounded-brand bg-slate-card border border-slate flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-coral shrink-0" />
                 <span className="text-xs font-heading font-bold uppercase tracking-wider text-warm-white">
-                  Zero Pay-To-Win Mechanics &bull; 100% Skill-First Competitive Balance
+                  100% Skill-First Competitive Balance
                 </span>
               </div>
             </div>

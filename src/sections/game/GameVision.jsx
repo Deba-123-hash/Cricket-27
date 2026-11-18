@@ -79,7 +79,7 @@ export const GameVision = () => {
                 100% Passion Driven
               </h3>
               <p className="text-sm text-warm-white/70 leading-relaxed">
-                Created by cricket obsessives who care deeply about authentic field placements, ball reverse-swing, and pitch behavior.
+                Dedicated to authentic field placements, ball swing, and realistic pitch behavior.
               </p>
             </div>
 
@@ -91,7 +91,7 @@ export const GameVision = () => {
                 Pure 2D Focus
               </h3>
               <p className="text-sm text-warm-white/70 leading-relaxed">
-                Prioritizing frame-perfect control response, striking stylized art, and fluid 120 FPS performance over generic 3D models.
+                Frame-perfect control response and fluid 120 FPS stylized visual art.
               </p>
             </div>
 
@@ -103,7 +103,7 @@ export const GameVision = () => {
                 Community Centered
               </h3>
               <p className="text-sm text-warm-white/70 leading-relaxed">
-                Every design concept and feature milestone is shared directly with the gaming community for transparent feedback and votes.
+                Design concepts and milestones shaped directly through open community feedback.
               </p>
             </div>
           </motion.div>

@@ -32,7 +32,6 @@ export const AboutHero = () => {
             alt="International cricket stadium at dusk under floodlight illumination"
             className="w-full h-full object-cover object-center opacity-40"
             loading="eager"
-            fetchPriority="high"
             decoding="async"
             width="1920"
             height="1080"

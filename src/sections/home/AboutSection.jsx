@@ -47,18 +47,14 @@ export const AboutSection = () => {
               CRICKET27 redefines digital cricket through sub-millisecond gameplay, broadcast presentation, and an authentic competitive spirit for fans worldwide.
             </p>
 
-            {/* Brand Accent Card: 27 Number Accent */}
-            <div className="p-5 rounded-brand bg-slate-card border border-slate flex items-start gap-4">
-              <div className="w-12 h-12 rounded bg-midnight border border-lime/40 flex items-center justify-center text-lime font-heading font-black text-2xl shrink-0 shadow-lime-glow/20">
+            {/* Brand Distinction Pill */}
+            <div className="pt-1 flex items-center gap-3">
+              <div className="w-10 h-10 rounded-brand bg-slate-card border border-lime/40 flex items-center justify-center text-lime font-heading font-black text-xl shrink-0 shadow-lime-glow/20">
                 27
               </div>
-              <div className="space-y-1">
-                <span className="text-xs font-heading font-bold uppercase tracking-wider text-warm-white block">
-                  Dedicated To Tactical Depth
-                </span>
-                <p className="text-xs text-muted-text leading-relaxed">
-                  Master authentic crease awareness, tactical field placements, and sub-millisecond stroke timing.
-                </p>
+              <div className="text-xs font-mono text-muted-text">
+                <span className="text-warm-white font-heading font-bold uppercase tracking-wider block">TACTICAL 2D PERSPECTIVE</span>
+                <span>Authentic crease awareness &amp; stroke timing</span>
               </div>
             </div>
 

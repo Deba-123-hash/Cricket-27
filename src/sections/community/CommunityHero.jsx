@@ -22,7 +22,6 @@ export const CommunityHero = () => {
             alt="Cricket stadium packed with passionate supporters under floodlights"
             className="w-full h-full object-cover object-center opacity-30 scale-105"
             loading="eager"
-            fetchPriority="high"
             decoding="async"
             width="1920"
             height="1080"

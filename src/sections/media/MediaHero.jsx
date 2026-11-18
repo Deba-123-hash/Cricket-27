@@ -22,7 +22,6 @@ export const MediaHero = () => {
             alt="Atmospheric cricket stadium illuminated under floodlights"
             className="w-full h-full object-cover object-center opacity-35 scale-105"
             loading="eager"
-            fetchPriority="high"
             decoding="async"
             width="1920"
             height="1080"

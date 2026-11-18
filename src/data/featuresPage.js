@@ -1,14 +1,14 @@
 /**
  * CRICKET27 — Features Page Official Data
  * Phase 10 Complete Features Showcase Specifications
- * Note: These are proposed promotional concepts, not released game features.
+ * Editorial Content — Concise, impactful, visual-first copy
  */
 
 export const FEATURES_HERO_DATA = {
-  eyebrow: 'DISCOVER THE EXPERIENCE',
+  eyebrow: 'THE CRICKET27 EXPERIENCE',
   titleLines: ['EVERY DETAIL.', 'EVERY MOMENT.', 'THE SPIRIT OF CRICKET.'],
   description:
-    'Tactical depth, athletic authenticity, and a modern 2D cricket gaming perspective built around precision and competition.',
+    'Tactical depth, athletic responsiveness, and a stylized 2D sports gaming perspective built around skill.',
   primaryCtaText: 'EXPLORE FEATURES',
   secondaryCtaText: 'OUR GAME',
   badgeText: 'CONCEPT SHOWCASE • IN ACTIVE DESIGN',
@@ -17,7 +17,7 @@ export const FEATURES_HERO_DATA = {
   stats: [
     { label: 'Core Pillars', value: '6 Categories' },
     { label: 'Art Direction', value: 'Dynamic 2D' },
-    { label: 'Tactical Depth', value: 'Uncompromised' },
+    { label: 'Tactical Depth', value: 'Skill First' },
   ],
 };
 
@@ -25,8 +25,7 @@ export const FEATURE_OVERVIEW_ITEMS = [
   {
     id: 'batting-experience',
     title: 'Batting Experience',
-    shortDescription:
-      'Precision shot selection, 360-degree control, and the tactile thrill of finding the sweet spot.',
+    shortDescription: 'Precision timing, 360° analog placement, and the tactile feel of the sweet spot.',
     icon: 'Crosshair',
     badge: 'Timing & Placement',
     targetSectionId: 'batting-experience',
@@ -36,8 +35,7 @@ export const FEATURE_OVERVIEW_ITEMS = [
   {
     id: 'bowling-experience',
     title: 'Bowling Experience',
-    shortDescription:
-      'Command pace, seam angle, swing drift, and subtle spin variations to outthink the batter.',
+    shortDescription: 'Control pace, seam drift, release angles, and deceptive spin rotations.',
     icon: 'Zap',
     badge: 'Pace & Deception',
     targetSectionId: 'bowling-experience',
@@ -47,8 +45,7 @@ export const FEATURE_OVERVIEW_ITEMS = [
   {
     id: 'fielding-experience',
     title: 'Fielding Experience',
-    shortDescription:
-      'Reflex boundary saves, acrobatic slip catches, and laser-accurate direct-hit throws.',
+    shortDescription: 'Reflex boundary parries, acrobatic slip takes, and direct-hit throws.',
     icon: 'Shield',
     badge: 'Agility & Reflexes',
     targetSectionId: 'fielding-experience',
@@ -58,10 +55,9 @@ export const FEATURE_OVERVIEW_ITEMS = [
   {
     id: 'match-presentation',
     title: 'Match Presentation',
-    shortDescription:
-      'Cinematic floodlit arenas, broadcast HUD telemetry, and dynamic stadium lighting.',
+    shortDescription: 'Cinematic night venues, broadcast HUD telemetry, and atmospheric floodlighting.',
     icon: 'Tv',
-    badge: 'Atmosphere & Broadcast',
+    badge: 'Atmosphere & HUD',
     targetSectionId: 'match-presentation',
     image: '/assets/features/match-presentation/stadium-atmosphere.webp',
     fallbackImage: '/assets/features/match-presentation/stadium-atmosphere.jpg',
@@ -69,8 +65,7 @@ export const FEATURE_OVERVIEW_ITEMS = [
   {
     id: 'competitive-experience',
     title: 'Competitive Experience',
-    shortDescription:
-      'Tactical depth and high-stakes decision-making across world cups and death-over chases.',
+    shortDescription: 'High-stakes decision-making across international tournaments and death-over chases.',
     icon: 'Trophy',
     badge: 'Strategy & Cups',
     targetSectionId: 'competitive-experience',
@@ -80,8 +75,7 @@ export const FEATURE_OVERVIEW_ITEMS = [
   {
     id: 'customisation-concepts',
     title: 'Customisation',
-    shortDescription:
-      'Express team identity through custom colourways, bespoke jersey designs, and willow decals.',
+    shortDescription: 'Express team identity through bespoke colourways, custom kits, and willow decals.',
     icon: 'Sparkles',
     badge: 'Identity & Style',
     targetSectionId: 'customisation-concepts',
@@ -94,7 +88,7 @@ export const BATTING_DATA = {
   eyebrow: 'THE ART OF BATTING',
   heading: 'TIMING. TECHNIQUE. THE PERFECT SHOT.',
   description:
-    'Master timing windows, reading trajectories, and unleashing 360° strokeplay across orthodox cover drives and modern improvisations.',
+    'Master tight timing windows and 360° analog strokeplay from classic cover drives to improvisational ramps.',
   imageMain: '/assets/features/batting/batting-main.webp',
   imageFallback: '/assets/features/batting/batting-main.jpg',
   imageDetail: '/assets/features/batting/batting-detail.webp',
@@ -103,21 +97,18 @@ export const BATTING_DATA = {
   highlights: [
     {
       title: 'SHOT SELECTION',
-      subtitle: 'Approaching Each Delivery',
-      description:
-        'Read line, length, and trajectory to calculate when to defend, punch, or loft.',
+      subtitle: 'Reading Trajectory',
+      description: 'Anticipate line, length, and seam to defend, punch, or loft with purpose.',
     },
     {
-      title: 'TIMING AND TECHNIQUE',
-      subtitle: 'The Sweet Spot Contact',
-      description:
-        'Micro-second timing mechanics separating boundary strikes from outside edges.',
+      title: 'TIMING WINDOWS',
+      subtitle: 'Sweet Spot Contact',
+      description: 'Micro-second input timing separating boundary strikes from outside edges.',
     },
     {
-      title: 'BATTING STYLE',
-      subtitle: 'Individuality on the Crease',
-      description:
-        'Express personal flair with classical orthodox strokes or fearless innovative ramps.',
+      title: 'CREATIVE FLAIR',
+      subtitle: 'Personal Style',
+      description: 'Express individuality with classical orthodox strokes or fearless innovative shots.',
     },
   ],
   ctaText: 'EXPLORE OUR GAME',
@@ -128,29 +119,26 @@ export const BOWLING_DATA = {
   eyebrow: 'THE ART OF BOWLING',
   heading: 'PRECISION MEETS STRATEGY.',
   description:
-    'Dictate match tempo with precision pace, late swing drift, seam deviations, and deceptive spin rotations.',
+    'Dictate the match tempo with express pace, late swing drift, seam deviation, and deceptive spin rotations.',
   imageMain: '/assets/features/bowling/bowling-main.webp',
   imageFallback: '/assets/features/bowling/bowling-main.jpg',
   imageDetail: '/assets/features/bowling/bowling-tactics.svg',
-  imageAlt: 'Macro close-up of a bowler gripping the red cricket ball with raised white seam',
+  imageAlt: 'Bowler gripping the red cricket ball with raised white seam',
   highlights: [
     {
-      title: 'PACE BOWLING',
-      subtitle: 'Speed, Rhythm & Accuracy',
-      description:
-        'Generate express velocity, late outswing, and seam movement in the corridor of uncertainty.',
+      title: 'PACE & SWING',
+      subtitle: 'Velocity & Drift',
+      description: 'Generate express speed and late outswing in the corridor of uncertainty.',
     },
     {
-      title: 'SPIN BOWLING',
-      subtitle: 'Variation, Drift & Deception',
-      description:
-        'Execute subtle arm balls, sharp leg-breaks, atmospheric drift, and sharp surface dip.',
+      title: 'SPIN & DECEPTION',
+      subtitle: 'Turn & Variations',
+      description: 'Execute subtle arm balls, sharp leg-breaks, and dip off the surface.',
     },
     {
-      title: 'BOWLING STRATEGY',
-      subtitle: 'Field-Aligned Execution',
-      description:
-        'Set field traps, exploit pitch deterioration, and build bowling tandem pressure.',
+      title: 'TACTICAL TRAPS',
+      subtitle: 'Field-Aligned Plans',
+      description: 'Set field traps, exploit pitch wear, and build tandem bowling pressure.',
     },
   ],
 };
@@ -166,22 +154,19 @@ export const FIELDING_DATA = {
   imageAlt: 'Athletic fielding perspective and dynamic ground coverage',
   highlights: [
     {
-      title: 'ATHLETICISM',
-      subtitle: 'Agility & Physical Mastery',
-      description:
-        'Boundary-skimming dives, airborne catches, and rapid recovery throws back to the stumps.',
+      title: 'ATHLETIC AGILITY',
+      subtitle: 'Ground Coverage',
+      description: 'Boundary-skimming dives, airborne catches, and rapid recovery throws.',
     },
     {
-      title: 'TEAMWORK',
-      subtitle: 'Coordination & Collective Effort',
-      description:
-        'Dynamic ring rotations, backing up throws, and boundary relay tag teams.',
+      title: 'RING COORDINATION',
+      subtitle: 'Field Positioning',
+      description: 'Dynamic ring rotations, backing up throws, and boundary relay teamwork.',
     },
     {
-      title: 'QUICK REACTIONS',
-      subtitle: 'Match-Changing Split Seconds',
-      description:
-        'Lightning reflex slip catches, sharp bat-pad grabs, and direct-hit run outs.',
+      title: 'CLUTCH REFLEXES',
+      subtitle: 'Split-Second Takes',
+      description: 'Lightning slip catches, sharp bat-pad grabs, and direct-hit run outs.',
     },
   ],
 };
@@ -190,7 +175,7 @@ export const MATCH_PRESENTATION_DATA = {
   eyebrow: 'THE ATMOSPHERE OF CRICKET',
   heading: 'MORE THAN THE MATCH.\nIT’S THE EXPERIENCE.',
   description:
-    'Atmospheric floodlit arenas, dynamic telemetry HUDs, and the electric roar of high-stakes tournament cricket.',
+    'Atmospheric floodlit arenas, clean telemetry HUDs, and the electric roar of tournament cricket.',
   bgImage: '/assets/features/match-presentation/stadium-atmosphere.webp',
   bgFallback: '/assets/features/match-presentation/stadium-atmosphere.jpg',
   themes: [
@@ -198,37 +183,33 @@ export const MATCH_PRESENTATION_DATA = {
       id: 'stadium-atmosphere',
       number: '01',
       title: 'STADIUM ATMOSPHERE',
-      subtitle: 'The Roar of 80,000 Fans',
-      description:
-        'Premier cricket stadiums under towering floodlights with volumetric haze and crowd acoustics.',
-      tag: 'Arena Energy',
+      subtitle: 'Arena Energy',
+      description: 'Premier stadiums under floodlights with volumetric haze and crowd acoustics.',
+      tag: 'Atmosphere',
     },
     {
       id: 'match-moments',
       number: '02',
-      title: 'MATCH MOMENTS',
-      subtitle: 'Dramatic Finishes',
-      description:
-        'Last-over thrillers, nervous nineties, hat-trick tension, and clutch DRS reviews.',
-      tag: 'High Stakes',
+      title: 'CLUTCH MOMENTS',
+      subtitle: 'High Drama',
+      description: 'Last-over thrillers, nervous nineties, hat-trick tension, and DRS reviews.',
+      tag: 'Tension',
     },
     {
       id: 'sports-presentation',
       number: '03',
       title: 'SPORTS PRESENTATION',
-      subtitle: 'Broadcast-Grade Telemetry',
-      description:
-        'Wagon wheels, release velocity, ball trajectory arcs, and clean HUD telemetry design.',
-      tag: 'Telemetry HUD',
+      subtitle: 'Telemetry Overlays',
+      description: 'Wagon wheels, release speed, trajectory arcs, and clean broadcast HUDs.',
+      tag: 'Broadcast',
     },
     {
       id: 'cricket-culture',
       number: '04',
       title: 'CRICKET CULTURE',
       subtitle: 'Timeless Traditions',
-      description:
-        'Timeless traditions, respectful sportsmanship, and the passion uniting generations.',
-      tag: 'Soul of Cricket',
+      description: 'Deep traditions, sportsmanlike conduct, and passion uniting cricket fans.',
+      tag: 'Tradition',
     },
   ],
 };
@@ -237,28 +218,25 @@ export const COMPETITIVE_DATA = {
   eyebrow: 'THE SPIRIT OF COMPETITION',
   heading: 'CRICKET IS A GAME OF DECISIONS.',
   description:
-    'Calculated decision-making under high-pressure death overs, championship series, and tactical match situations.',
+    'High-pressure death overs, championship series, and tactical match scenarios decided by skill.',
   imageMain: '/assets/features/competitive/competitive-concept.webp',
   imageFallback: '/assets/features/competitive/competitive-concept.jpg',
   imageDiagram: '/assets/features/competitive/competitive-leagues.svg',
   highlights: [
     {
-      title: 'STRATEGIC THINKING',
-      subtitle: 'Situational Match Awareness',
-      description:
-        'Assess required run rates, powerplay restrictions, and bowling quota management.',
+      title: 'TACTICAL AWARENESS',
+      subtitle: 'Match Intelligence',
+      description: 'Balance required run rates, powerplay fields, and bowling quotas.',
     },
     {
-      title: 'COMPETITIVE SPIRIT',
-      subtitle: 'The Thrill of the Duel',
-      description:
-        'Defend low totals on worn pitches, or execute composed run chases under the lights.',
+      title: 'PRESSURE MOMENTS',
+      subtitle: 'The Decisive Duel',
+      description: 'Defend low totals on worn pitches or orchestrate composed run chases.',
     },
     {
-      title: 'TEAM DYNAMICS',
-      subtitle: 'Partnerships & Collective Will',
-      description:
-        'Build resolute batting stands and coordinate bowling attacks to break stubborn defenses.',
+      title: 'TEAM MOMENTUM',
+      subtitle: 'Partnerships & Grit',
+      description: 'Build resolute batting partnerships and coordinate attacks to break stands.',
     },
   ],
 };
@@ -267,7 +245,7 @@ export const CUSTOMISATION_DATA = {
   eyebrow: 'MAKE IT YOUR STYLE',
   heading: 'A PERSONAL TOUCH TO CRICKET.',
   description:
-    'Express your visual identity through custom team kits, willow sticker decals, and tailored gear accents.',
+    'Express your visual identity with custom team kits, willow sticker decals, and tailored accents.',
   diagram: '/assets/features/customisation/customisation-kit.svg',
   imageMain: '/assets/features/feature-summary.webp',
   imageFallback: '/assets/features/feature-summary.jpg',
@@ -275,33 +253,29 @@ export const CUSTOMISATION_DATA = {
     {
       id: 'team-colours',
       title: 'TEAM COLOURS',
-      description:
-        'Bespoke palettes blending midnight navies, vibrant electric accents, and classic whites.',
-      tag: 'Palette Presets',
+      description: 'Bespoke palettes blending midnight navies, vibrant electric accents, and classic whites.',
+      tag: 'Palettes',
       icon: 'Palette',
     },
     {
       id: 'jersey-styles',
       title: 'JERSEY STYLES',
-      description:
-        'Athletic silhouettes, side-panel gradients, collar options, and bold squad numbers.',
-      tag: 'Apparel Design',
+      description: 'Athletic silhouettes, side-panel gradients, collar options, and bold squad numbers.',
+      tag: 'Apparel',
       icon: 'Shirt',
     },
     {
       id: 'cricket-equipment',
       title: 'CRICKET EQUIPMENT',
-      description:
-        'Natural willow grains, custom grip textures, coloured batting pads, and helmet decals.',
-      tag: 'Willow & Gear',
+      description: 'Natural willow grains, custom grip textures, coloured pads, and helmet decals.',
+      tag: 'Gear',
       icon: 'Wrench',
     },
     {
       id: 'player-presentation',
-      title: 'PLAYER PRESENTATION',
-      description:
-        'Unique batting stances, wristwear, sunglasses, and celebratory animations.',
-      tag: 'Player Identity',
+      title: 'PLAYER IDENTITY',
+      description: 'Unique batting stances, wristwear, sunglasses, and celebratory animations.',
+      tag: 'Flair',
       icon: 'UserCheck',
     },
   ],
@@ -317,35 +291,35 @@ export const FEATURE_SUMMARY_ITEMS = [
   },
   {
     category: 'Bowling Experience',
-    heading: 'Pace, Seam & Spin Deception',
-    detail: 'Corridor of uncertainty, ball drift, release angles, and strategic field traps.',
+    heading: 'Pace, Seam & Drift',
+    detail: 'Corridor of uncertainty, ball drift, release angles, and strategic traps.',
     tag: 'Defense',
     accentColor: 'coral',
   },
   {
     category: 'Fielding Experience',
-    heading: 'Agility, Reflexes & Catches',
+    heading: 'Agility & Direct Hits',
     detail: 'Boundary diving stops, slip cordons, and clutch direct-hit throws.',
     tag: 'Athleticism',
     accentColor: 'lime',
   },
   {
     category: 'Match Presentation',
-    heading: 'Atmospheric Arenas & Broadcast HUD',
-    detail: 'Volumetric floodlights, crowd roar audio, and real-time telemetry overlays.',
+    heading: 'Arenas & Telemetry',
+    detail: 'Volumetric floodlights, crowd roar audio, and real-time telemetry HUDs.',
     tag: 'Immersion',
     accentColor: 'warm-white',
   },
   {
     category: 'Competitive Experience',
-    heading: 'Strategic Chess & Decision Making',
-    detail: 'Required run rate pressure, partnership building, and championship stakes.',
+    heading: 'Tactical Chess & Pressure',
+    detail: 'Run rate calculations, partnership building, and championship stakes.',
     tag: 'Strategy',
     accentColor: 'lime',
   },
   {
     category: 'Customisation Concepts',
-    heading: 'Personalised Kits & Willow Styling',
+    heading: 'Kits & Willow Decals',
     detail: 'Team colourways, jersey patterns, equipment finishes, and player flair.',
     tag: 'Identity',
     accentColor: 'coral',

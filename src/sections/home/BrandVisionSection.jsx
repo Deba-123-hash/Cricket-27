@@ -10,29 +10,26 @@ export const BrandVisionSection = () => {
     {
       number: '01',
       title: 'PASSION FOR CRICKET',
-      subtitle: 'Inspired by the sport and its global following.',
-      description: 'Channeling the drama of floodlit night arenas and the psychological duel at the crease into every delivery.',
+      subtitle: 'Honoring the Sport',
+      description: 'Channeling the drama of floodlit arenas and crease tension into every delivery.',
       icon: Heart,
       accent: 'text-coral',
-      borderColor: 'border-coral/40',
     },
     {
       number: '02',
-      title: 'BUILT WITH CREATIVITY',
-      subtitle: 'Focused on fresh ideas and thoughtful experiences.',
-      description: 'Elevating 2D sports gaming with sub-millisecond input fidelity, broadcast-grade telemetry, and bold art direction.',
+      title: 'CREATIVE CRAFT',
+      subtitle: 'Distinctive 2D Art',
+      description: 'Elevating sports gaming with sub-millisecond fidelity and broadcast telemetry.',
       icon: Lightbulb,
       accent: 'text-lime',
-      borderColor: 'border-lime/40',
     },
     {
       number: '03',
       title: 'COMMUNITY FIRST',
-      subtitle: 'Growing alongside people who share the love of cricket.',
-      description: 'Built with the community. Developer devlogs, mechanics polls, and player feedback shape our design roadmap.',
+      subtitle: 'Player-Driven Vision',
+      description: 'Shaped alongside cricket fans through devlogs, polls, and open feedback.',
       icon: Users,
       accent: 'text-sky-400',
-      borderColor: 'border-sky-400/40',
     },
   ];
 
@@ -45,7 +42,7 @@ export const BrandVisionSection = () => {
 
       <Container size="xl" className="relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-20 space-y-5">
+        <div className="max-w-3xl mb-16 space-y-4">
           <div className="flex items-center gap-3">
             <Badge variant="lime" size="sm">
               BRAND PHILOSOPHY &bull; CORE PILLARS
@@ -93,7 +90,7 @@ export const BrandVisionSection = () => {
                   </div>
 
                   {/* Title & Subtitle */}
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     <h3 className="text-xl font-heading font-black uppercase tracking-wide text-warm-white group-hover:text-lime transition-colors">
                       {item.title}
                     </h3>
@@ -102,7 +99,7 @@ export const BrandVisionSection = () => {
                     </p>
                   </div>
 
-                  {/* Detailed Prose */}
+                  {/* Concise Description */}
                   <p className="text-xs sm:text-sm text-muted-text leading-relaxed">
                     {item.description}
                   </p>
