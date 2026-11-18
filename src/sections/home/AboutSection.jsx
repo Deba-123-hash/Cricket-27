@@ -89,9 +89,9 @@ export const AboutSection = () => {
               {/* Main Artwork */}
               <div className="aspect-[4/3] w-full overflow-hidden bg-midnight">
                 <CricketImage
-                  src="/assets/about/about-cricket-passion.jpg"
+                  src="/assets/about/about-cricket-passion.webp"
+                  fallbackSrc="/assets/about/about-cricket-passion.jpg"
                   alt="Atmospheric stadium tunnel view of cricketer walking onto floodlit pitch"
-                  title="Stadium Atmosphere"
                   icon="trophy"
                   aspectRatio="4/3"
                   objectFit="cover"

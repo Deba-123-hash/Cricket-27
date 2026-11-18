@@ -26,9 +26,9 @@ export const GameIntroSection = () => {
             <div className="relative rounded-brand overflow-hidden border border-slate shadow-card-elevated group">
               <div className="aspect-[16/10] w-full overflow-hidden bg-midnight">
                 <CricketImage
-                  src="/assets/game-concept/game-concept-stadium.jpg"
+                  src="/assets/game-concept/game-concept-stadium.webp"
+                  fallbackSrc="/assets/game-concept/game-concept-stadium.jpg"
                   alt="Panoramic night cricket match stadium with floodlights and bowler in delivery stride"
-                  title="2D Broadcast Perspective"
                   icon="eye"
                   aspectRatio="16/10"
                   objectFit="cover"

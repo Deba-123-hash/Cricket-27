@@ -51,6 +51,12 @@ const ASPECT_MAP = {
   auto: '',
 };
 
+/**
+ * CricketImage — Robust image component with:
+ * 1. Primary src attempt
+ * 2. fallbackSrc attempt if primary fails
+ * 3. Branded CRICKET27 placeholder if all fail or no src provided
+ */
 export const CricketImage = ({
   src,
   alt = 'CRICKET27 visual asset',
@@ -70,17 +76,18 @@ export const CricketImage = ({
   height,
   ...props
 }) => {
-  const [currentSrc, setCurrentSrc] = useState(src || fallbackSrc || '');
-  const [hasError, setHasError] = useState(!src && !fallbackSrc);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [usedFallback, setUsedFallback] = useState(false);
+  // Track which src to actually render
+  const [imgSrc, setImgSrc] = useState(src || fallbackSrc || '');
+  // 'loading' | 'loaded' | 'error'
+  const [status, setStatus] = useState(() => (src || fallbackSrc ? 'loading' : 'error'));
+  const [triedFallback, setTriedFallback] = useState(false);
 
+  // Reset when src/fallbackSrc props change
   useEffect(() => {
     const nextSrc = src || fallbackSrc || '';
-    setCurrentSrc(nextSrc);
-    setHasError(!nextSrc);
-    setIsLoaded(false);
-    setUsedFallback(false);
+    setImgSrc(nextSrc);
+    setTriedFallback(false);
+    setStatus(nextSrc ? 'loading' : 'error');
   }, [src, fallbackSrc]);
 
   const IconComponent =
@@ -88,22 +95,24 @@ export const CricketImage = ({
       ? ICON_MAP[icon.toLowerCase()] || Activity
       : icon || Activity;
 
-  const handleImageError = (e) => {
-    if (e && e.currentTarget) {
-      e.currentTarget.style.display = 'none';
-    }
-    if (fallbackSrc && !usedFallback && currentSrc !== fallbackSrc) {
-      setUsedFallback(true);
-      setCurrentSrc(fallbackSrc);
-      setIsLoaded(false);
+  const finalImgClass = imageClassName || imgClassName;
+
+  const handleLoad = () => setStatus('loaded');
+
+  const handleError = () => {
+    // Try fallback once if available and not yet tried
+    if (fallbackSrc && !triedFallback && imgSrc !== fallbackSrc) {
+      setTriedFallback(true);
+      setImgSrc(fallbackSrc);
+      setStatus('loading');
     } else {
-      setHasError(true);
+      setStatus('error');
     }
   };
 
-  const finalImgClass = imageClassName || imgClassName;
-  const isSvg = typeof currentSrc === 'string' && currentSrc.endsWith('.svg');
-  const isWebp = typeof currentSrc === 'string' && currentSrc.endsWith('.webp');
+  const isError = status === 'error';
+  const isLoaded = status === 'loaded';
+  const isLoading = status === 'loading';
 
   return (
     <div
@@ -114,111 +123,86 @@ export const CricketImage = ({
         className
       )}
     >
-      {/* Loading Skeleton */}
-      {!isLoaded && !hasError && (
+      {/* Loading Skeleton — only shown while loading and not yet loaded */}
+      {isLoading && (
         <div
           data-testid="cricket-image-skeleton"
           className="absolute inset-0 bg-slate-card/70 animate-pulse z-0"
         />
       )}
 
-      {hasError || !currentSrc ? (
-        /* CRICKET27 Branded Visual Fallback UI */
+      {/* Branded Error Fallback */}
+      {isError && (
         <div
           data-testid="cricket-image-fallback"
-          className="w-full h-full bg-gradient-to-br from-slate-card via-midnight to-slate-card/90 flex flex-col items-center justify-center relative overflow-hidden p-4 text-center z-10"
+          className="absolute inset-0 w-full h-full bg-gradient-to-br from-slate-card via-midnight to-slate-card/90 flex flex-col items-center justify-center overflow-hidden p-4 text-center z-10"
         >
-          {/* Subtle Electric Lime Ambient Radial Glow */}
+          {/* Ambient Glow */}
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(183,243,74,0.12)_0%,transparent_70%)] pointer-events-none" />
-
-          {/* Athletic Pitch Crease & Seam Lines Pattern */}
+          {/* Grid Pattern */}
           <div className="absolute inset-0 opacity-15 pointer-events-none bg-[linear-gradient(to_right,#263449_1px,transparent_1px),linear-gradient(to_bottom,#263449_1px,transparent_1px)] bg-[size:24px_24px]" />
-
-          {/* Centered Luminous Badge */}
+          {/* Icon Badge */}
           <div className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-brand-lg bg-midnight/90 border border-slate-border/80 flex items-center justify-center text-lime shadow-card mb-2">
             <IconComponent className="w-6 h-6" aria-hidden="true" />
           </div>
-
-          {/* Signature Brand Badge */}
           <span className="relative z-10 font-heading font-black text-xs uppercase tracking-wider text-warm-white">
             CRICKET27
           </span>
-
-          {/* Signature Brand Tagline */}
           <span className="relative z-10 font-mono text-[9px] sm:text-[10px] text-lime/80 uppercase tracking-widest mt-0.5">
             BEYOND THE BOUNDARY
           </span>
         </div>
-      ) : pictureSources && pictureSources.length > 0 ? (
-        <picture className="w-full h-full">
-          {pictureSources.map((source, idx) => (
-            <source
-              key={idx}
-              media={source.media}
-              srcSet={source.srcSet}
-              type={source.type}
+      )}
+
+      {/* Actual Image — always rendered (hidden via opacity until loaded, removed from layout when error) */}
+      {!isError && imgSrc && (
+        pictureSources && pictureSources.length > 0 ? (
+          <picture className="w-full h-full">
+            {pictureSources.map((source, idx) => (
+              <source
+                key={idx}
+                media={source.media}
+                srcSet={source.srcSet}
+                type={source.type}
+              />
+            ))}
+            <img
+              src={imgSrc}
+              alt={alt}
+              loading={loading}
+              decoding={decoding}
+              width={width}
+              height={height}
+              onLoad={handleLoad}
+              onError={handleError}
+              className={cn(
+                'w-full h-full transition-opacity duration-500',
+                objectFit === 'cover' ? 'object-cover' : 'object-contain',
+                isLoaded ? 'opacity-100' : 'opacity-0',
+                finalImgClass
+              )}
+              {...props}
             />
-          ))}
+          </picture>
+        ) : (
           <img
-            src={currentSrc}
+            src={imgSrc}
             alt={alt}
             loading={loading}
             decoding={decoding}
             width={width}
             height={height}
-            onLoad={() => setIsLoaded(true)}
-            onError={handleImageError}
+            onLoad={handleLoad}
+            onError={handleError}
             className={cn(
-              'w-full h-full transition-opacity duration-300',
+              'w-full h-full transition-opacity duration-500',
               objectFit === 'cover' ? 'object-cover' : 'object-contain',
               isLoaded ? 'opacity-100' : 'opacity-0',
               finalImgClass
             )}
             {...props}
           />
-        </picture>
-      ) : !isSvg && !isWebp && !usedFallback && typeof currentSrc === 'string' && currentSrc.match(/\.(jpg|jpeg|png)$/i) ? (
-        <picture className="w-full h-full">
-          <source
-            type="image/webp"
-            srcSet={currentSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp')}
-          />
-          <img
-            src={currentSrc}
-            alt={alt}
-            loading={loading}
-            decoding={decoding}
-            width={width}
-            height={height}
-            onLoad={() => setIsLoaded(true)}
-            onError={handleImageError}
-            className={cn(
-              'w-full h-full transition-opacity duration-300',
-              objectFit === 'cover' ? 'object-cover' : 'object-contain',
-              isLoaded ? 'opacity-100' : 'opacity-0',
-              finalImgClass
-            )}
-            {...props}
-          />
-        </picture>
-      ) : (
-        <img
-          src={currentSrc}
-          alt={alt}
-          loading={loading}
-          decoding={decoding}
-          width={width}
-          height={height}
-          onLoad={() => setIsLoaded(true)}
-          onError={handleImageError}
-          className={cn(
-            'w-full h-full transition-opacity duration-300',
-            objectFit === 'cover' ? 'object-cover' : 'object-contain',
-            isLoaded ? 'opacity-100' : 'opacity-0',
-            finalImgClass
-          )}
-          {...props}
-        />
+        )
       )}
     </div>
   );
